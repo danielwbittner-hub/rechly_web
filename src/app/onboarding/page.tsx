@@ -172,7 +172,7 @@ export default function OnboardingPage() {
     const handleFinish = async () => {
         setSaving(true);
         try {
-            const values = form.getFieldsValue();
+            const values = form.getFieldsValue(true);
             await saveCompanyInfo({
                 name: values.company_name,
                 managing_directors: values.owner_name,
