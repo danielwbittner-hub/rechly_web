@@ -71,8 +71,10 @@ export function generateXRechnungXML(
     company: UserCompany,
 ): string {
     const client = invoice.client!;
-    const issueDate = invoice.issue_date.replace(/-/g, "");
-    const dueDate = invoice.due_date?.replace(/-/g, "") ?? "";
+    // Appwrite datetime attributes come back as timestamps
+    // (2026-10-09T00:00:00.000+00:00); format 102 needs YYYYMMDD.
+    const issueDate = invoice.issue_date.slice(0, 10).replace(/-/g, "");
+    const dueDate = invoice.due_date?.slice(0, 10).replace(/-/g, "") ?? "";
 
     const sellerVatId = company.vat_id || "";
     const sellerTaxNum = company.tax_number || "";
