@@ -20,6 +20,25 @@ Rechly ist unter AGPL-3.0 veröffentlicht und richtet sich an deutsche Rechnungs
 - [sevdesk Alternative](https://rechly.de/sevdesk-alternative): Rechly im Vergleich zu sevdesk
 - [Rechnungssoftware für Freelancer](https://rechly.de/rechnungssoftware-fuer-freelancer): Fokus auf Freelancer-Workflows
 
+## Kostenlose Business-Tools & Rechner (Ohne Registrierung)
+
+- [Alle Tools & Rechner](https://rechly.de/tools): Die kostenlose Business-Superapp für deutsche Unternehmen
+- [E-Rechnung Viewer](https://rechly.de/tools/e-rechnung-viewer): XRechnung (UBL/CII) und ZUGFeRD PDF im Browser prüfen und öffnen
+- [GiroCode Generator](https://rechly.de/tools/girocode-generator): Offiziellen EPC-QR-Code (SEPA) für Rechnungen erstellen
+- [Verzugszinsen-Rechner](https://rechly.de/tools/verzugszinsen-rechner): Gesetzliche Zinsen nach § 288 BGB und 40 € Mahnpauschale berechnen
+- [USt-IdNr. Prüfer (VIES)](https://rechly.de/tools/ust-idnr-pruefen): EU Umsatzsteuer-ID live validieren mit 10-Jahres Audit-Beleg
+- [Skontorechner](https://rechly.de/tools/skontorechner): Skonto, effektiven Jahreszins und Vorsteuerkorrektur (§ 17 UStG) berechnen
+- [Stundensatz-Rechner](https://rechly.de/tools/stundensatz-rechner): Mindest- und Markt-Stundensatz für Freelancer und Handwerker kalkulieren
+- [Kleinunternehmer-Rechner](https://rechly.de/tools/kleinunternehmer-rechner): Neue Grenzwerte (25.000 € / 100.000 €) nach § 19 UStG prüfen
+- [Impressum Generator (§ 5 DDG)](https://rechly.de/tools/impressum-generator): Abmahnsicheres Impressum nach aktuellem Digitale-Dienste-Gesetz
+- [Bewirtungsbeleg Rechner](https://rechly.de/tools/bewirtungsbeleg-rechner): 70/30 Aufteilung nach § 4 EStG mit vollem Vorsteuerabzug und Trinkgeld
+- [Arbeitstage-Rechner 2026](https://rechly.de/tools/arbeitstage-rechner): Arbeitstage und Feiertage für alle 16 Bundesländer
+- [Leitweg-ID Prüfer](https://rechly.de/tools/leitweg-id-pruefen): B2G Leitweg-ID für Behörden-Rechnungen mit Mod-97 Prüfziffer validieren
+- [Gewerbesteuer-Rechner](https://rechly.de/tools/gewerbesteuer-rechner): Gewerbesteuer mit Hebesätzen deutscher Städte und § 35 EStG Anrechnung
+- [Spesenrechner 2026](https://rechly.de/tools/verpflegungsmehraufwand-rechner): Gesetzlicher Verpflegungsmehraufwand nach BMF-Pauschalen
+- [Eigenbeleg-Generator](https://rechly.de/tools/kassenbuch-vorlage): Ersatzbeleg nach § 160 AO bei verlorenen Kassenbons erstellen
+- [Bautagebuch & Regiebericht](https://rechly.de/tools/bautagebuch-vorlage): Bautagesberichte und Behinderungsanzeigen nach VOB/B
+
 ## Produkt
 
 - [Funktionen](https://rechly.de/features): Alle Funktionen im Überblick

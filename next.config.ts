@@ -49,6 +49,27 @@ const nextConfig: NextConfig = {
             "@ant-design/nextjs-registry",
         ],
     },
+
+    async rewrites() {
+        return [
+            { source: "/werkzeuge", destination: "/tools" },
+            { source: "/verzugszinsen-rechner", destination: "/tools/verzugszinsen-rechner" },
+            { source: "/girocode-generator", destination: "/tools/girocode-generator" },
+            { source: "/e-rechnung-viewer", destination: "/tools/e-rechnung-viewer" },
+            { source: "/stundensatz-rechner", destination: "/tools/stundensatz-rechner" },
+            { source: "/skontorechner", destination: "/tools/skontorechner" },
+            { source: "/arbeitstage-rechner", destination: "/tools/arbeitstage-rechner" },
+            { source: "/ust-idnr-pruefen", destination: "/tools/ust-idnr-pruefen" },
+            { source: "/kleinunternehmer-rechner", destination: "/tools/kleinunternehmer-rechner" },
+            { source: "/leitweg-id-pruefen", destination: "/tools/leitweg-id-pruefen" },
+            { source: "/gewerbesteuer-rechner", destination: "/tools/gewerbesteuer-rechner" },
+            { source: "/bewirtungsbeleg-rechner", destination: "/tools/bewirtungsbeleg-rechner" },
+            { source: "/impressum-generator", destination: "/tools/impressum-generator" },
+            { source: "/verpflegungsmehraufwand-rechner", destination: "/tools/verpflegungsmehraufwand-rechner" },
+            { source: "/kassenbuch-vorlage", destination: "/tools/kassenbuch-vorlage" },
+            { source: "/bautagebuch-vorlage", destination: "/tools/bautagebuch-vorlage" },
+        ];
+    },
 };
 
 export default nextConfig;
