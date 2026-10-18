@@ -75,6 +75,13 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                         <Button type="text" href="/features">
                             {t("nav.features")}
                         </Button>
+                        <Button
+                            type="text"
+                            href="/tools"
+                            style={{ fontWeight: 600, color: "#2563eb" }}
+                        >
+                            Werkzeuge & Rechner
+                        </Button>
                         {language === "de" ? (
                             <Button type="text" href="/rechnung-schreiben">
                                 Ratgeber
@@ -190,6 +197,19 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                             style={{ justifyContent: "flex-start", height: 44 }}
                         >
                             {t("nav.features")}
+                        </Button>
+                        <Button
+                            type="text"
+                            href="/tools"
+                            onClick={() => setMobileMenuOpen(false)}
+                            style={{
+                                justifyContent: "flex-start",
+                                height: 44,
+                                fontWeight: 700,
+                                color: "#2563eb",
+                            }}
+                        >
+                            🛠️ Werkzeuge & Rechner
                         </Button>
                         {language === "de" ? (
                             <Button

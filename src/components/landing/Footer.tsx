@@ -99,6 +99,52 @@ export default function Footer() {
                         </Space>
                     </div>
 
+                    {/* Kostenlose Tools & Rechner */}
+                    <div>
+                        <Text
+                            strong
+                            style={{
+                                display: "block",
+                                marginBottom: 12,
+                                fontSize: 13,
+                                textTransform: "uppercase",
+                                letterSpacing: 0.5,
+                                color: "#374151",
+                            }}
+                        >
+                            Werkzeuge & Rechner
+                        </Text>
+                        <Space direction="vertical" size={8}>
+                            <Link href="/tools" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
+                                🛠️ Alle 15 Tools ansehen
+                            </Link>
+                            <Link href="/tools/e-rechnung-viewer" style={linkStyle}>
+                                E-Rechnung Viewer
+                            </Link>
+                            <Link href="/tools/girocode-generator" style={linkStyle}>
+                                GiroCode Generator
+                            </Link>
+                            <Link href="/tools/verzugszinsen-rechner" style={linkStyle}>
+                                Verzugszinsen-Rechner
+                            </Link>
+                            <Link href="/tools/ust-idnr-pruefen" style={linkStyle}>
+                                USt-IdNr. Prüfer (VIES)
+                            </Link>
+                            <Link href="/tools/skontorechner" style={linkStyle}>
+                                Skontorechner
+                            </Link>
+                            <Link href="/tools/stundensatz-rechner" style={linkStyle}>
+                                Stundensatz-Rechner
+                            </Link>
+                            <Link href="/tools/kleinunternehmer-rechner" style={linkStyle}>
+                                Kleinunternehmer-Rechner
+                            </Link>
+                            <Link href="/tools/arbeitstage-rechner" style={linkStyle}>
+                                Arbeitstage 2026
+                            </Link>
+                        </Space>
+                    </div>
+
                     {language === "de" ? (
                         <>
                             {/* Ratgeber: sitewide links to the SEO landing pages */}
