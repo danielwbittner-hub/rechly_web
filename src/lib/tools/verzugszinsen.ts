@@ -123,3 +123,8 @@ export function calculateVerzugszinsen(
         periodBreakdown: breakdown,
     };
 }
+
+export function getLatestBaseRate(): BasiszinssatzPeriod {
+    return BUNDESBANK_BASE_RATES[0];
+}
+

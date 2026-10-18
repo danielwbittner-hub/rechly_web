@@ -68,6 +68,12 @@ const nextConfig: NextConfig = {
             { source: "/verpflegungsmehraufwand-rechner", destination: "/tools/verpflegungsmehraufwand-rechner" },
             { source: "/kassenbuch-vorlage", destination: "/tools/kassenbuch-vorlage" },
             { source: "/bautagebuch-vorlage", destination: "/tools/bautagebuch-vorlage" },
+            { source: "/steuerkalender-2026", destination: "/tools/steuerkalender-2026" },
+            { source: "/mahnung-generator", destination: "/tools/mahnung-generator" },
+            { source: "/euer-rechner", destination: "/tools/euer-rechner" },
+            { source: "/reverse-charge-rechner", destination: "/tools/reverse-charge-rechner" },
+            { source: "/afa-rechner", destination: "/tools/afa-rechner" },
+            { source: "/sepa-xml-generator", destination: "/tools/sepa-xml-generator" },
         ];
     },
 };

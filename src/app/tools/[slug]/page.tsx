@@ -21,6 +21,12 @@ import GewerbesteuerRechner from "@/components/tools/GewerbesteuerRechner";
 import SpesenRechner from "@/components/tools/SpesenRechner";
 import KassenbuchEigenbeleg from "@/components/tools/KassenbuchEigenbeleg";
 import BautagebuchBuilder from "@/components/tools/BautagebuchBuilder";
+import SteuerkalenderRechner from "@/components/tools/SteuerkalenderRechner";
+import MahnungGenerator from "@/components/tools/MahnungGenerator";
+import EuerRechner from "@/components/tools/EuerRechner";
+import ReverseChargeRechner from "@/components/tools/ReverseChargeRechner";
+import AfaRechner from "@/components/tools/AfaRechner";
+import SepaXmlGenerator from "@/components/tools/SepaXmlGenerator";
 
 interface ToolPageProps {
     params: Promise<{ slug: string }>;
@@ -112,6 +118,18 @@ function renderToolComponent(slug: string) {
             return <KassenbuchEigenbeleg />;
         case "bautagebuch-vorlage":
             return <BautagebuchBuilder />;
+        case "steuerkalender-2026":
+            return <SteuerkalenderRechner />;
+        case "mahnung-generator":
+            return <MahnungGenerator />;
+        case "euer-rechner":
+            return <EuerRechner />;
+        case "reverse-charge-rechner":
+            return <ReverseChargeRechner />;
+        case "afa-rechner":
+            return <AfaRechner />;
+        case "sepa-xml-generator":
+            return <SepaXmlGenerator />;
         default:
             return <div>Tool nicht gefunden.</div>;
     }

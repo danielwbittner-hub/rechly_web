@@ -663,6 +663,328 @@ export const TOOLS_CATALOG: ToolDefinition[] = [
         ],
         relatedToolIds: ["arbeitstage-rechner", "stundensatz-rechner", "kassenbuch-vorlage"],
     },
+    {
+        id: "steuerkalender-2026",
+        slug: "steuerkalender-2026",
+        path: "/tools/steuerkalender-2026",
+        title: "Steuerkalender 2026: Alle Steuertermine & Fristen für Selbstständige mit .ics Export",
+        shortTitle: "Steuerkalender 2026",
+        eyebrow: "STEUERFRISTEN & TERMINPLANUNG",
+        category: "Finanzen & Steuern",
+        description:
+            "Alle gesetzlichen Fristen 2026 für USt-VA, ESt, GewSt, KSt und Lohnsteuer. Inklusive 3-Tage-Schonfrist nach § 240 AO, Feiertagsverschiebung nach § 108 AO und 1-Klick Kalender-Download (.ics).",
+        metaTitle: "Steuerkalender 2026 für Selbstständige – Alle Fristen & Termine (.ics) | Rechly",
+        metaDescription:
+            "Steuerkalender 2026: Alle Abgabefristen für USt-Voranmeldung, Einkommensteuer und Gewerbesteuer Vorauszahlung. Mit automatischer Schonfrist-Berechnung und .ics Kalender-Download.",
+        keywords: [
+            "Steuerkalender 2026",
+            "Steuerfristen Selbstständige 2026",
+            "USt-VA Termine 2026",
+            "Einkommensteuer Vorauszahlung Termine",
+            "Schonfrist Finanzamt § 240 AO",
+            "Dauerfristverlängerung UStDV",
+        ],
+        badge: "Neu 2026",
+        icon: "CalendarOutlined",
+        guideSections: [
+            {
+                title: "Die wichtigsten Steuertermine für Selbstständige in 2026",
+                content: [
+                    "Als Selbstständiger oder Unternehmer in Deutschland unterliegen Sie strengen Fälligkeitsterminen für Steuervorauszahlungen und Anmeldungssteuern.",
+                    "Verpassen Sie eine Frist, setzt das Finanzamt automatisch Säumniszuschläge (§ 240 AO) von 1 % pro angefangenem Monat auf den rückständigen Betrag fest sowie Verspätungszuschläge (§ 152 AO).",
+                ],
+                bullets: [
+                    "Einkommensteuer & Körperschaftsteuer Vorauszahlung: 10. März, 10. Juni, 10. September, 10. Dezember (§ 37 Abs. 1 EStG).",
+                    "Gewerbesteuer Vorauszahlung: 15. Februar, 15. Mai, 15. August, 15. November (§ 19 GewStG).",
+                    "Umsatzsteuer-Voranmeldung (USt-VA): Zum 10. des Folgemonats (monatlich) bzw. 10. April, Juli, Oktober, Januar (vierteljährlich).",
+                    "Dauerfristverlängerung (§ 46 UStDV): Verschiebt jede USt-Voranmeldung um genau einen Monat.",
+                ],
+            },
+            {
+                title: "Fristverschiebung und 3-tägige Schonfrist",
+                content: [
+                    "Gemäß § 108 Abs. 3 Abgabenordnung (AO) verschiebt sich eine Frist automatisch auf den nächsten Werktag, falls der Fälligkeitstag auf einen Samstag, Sonntag oder gesetzlichen Feiertag fällt.",
+                    "Bei Zahlung per Banküberweisung gewährt das Finanzamt eine gesetzliche Schonfrist von drei Tagen (§ 240 Abs. 3 AO). Geht der Betrag innerhalb von 3 Tagen nach Fälligkeit ein, entfällt der Säumniszuschlag.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Gilt die 3-tägige Schonfrist auch für Barzahlung oder Scheck?",
+                answer: "Nein, die 3-Tage-Schonfrist nach § 240 Abs. 3 AO gilt ausschließlich bei unbarer Zahlung (Banküberweisung). Bei Lastschrifteinzug durch das Finanzamt bucht die Behörde ohnehin fristgerecht ab.",
+            },
+            {
+                question: "Wie importiere ich die Termine in Google Kalender oder Outlook?",
+                answer: "Klicken Sie einfach auf 'Kalenderdatei herunterladen (.ics)'. Öffnen Sie die heruntergeladene Datei oder importieren Sie sie direkt in Ihren Apple-, Google- oder Outlook-Kalender mit integrierten 3-Tage-Voralarmen.",
+            },
+        ],
+        relatedToolIds: ["euer-rechner", "gewerbesteuer-rechner", "kleinunternehmer-rechner"],
+    },
+    {
+        id: "mahnung-generator",
+        slug: "mahnung-generator",
+        path: "/tools/mahnung-generator",
+        title: "Mahnung & Zahlungserinnerung Generator: Rechtssichere Mahnschreiben nach § 286 BGB",
+        shortTitle: "Mahnung Generator",
+        eyebrow: "FORDERUNGSMANAGEMENT & VERZUG",
+        category: "Recht & Vorlagen",
+        description:
+            "Erstellen Sie rechtssichere Zahlungserinnerungen, 1. Mahnungen und letzte Mahnungen vor Inkasso nach DIN 5008. Mit automatischer Verzugszins- und 40 € Pauschalen-Berechnung (§ 288 BGB).",
+        metaTitle: "Mahnung & Zahlungserinnerung Vorlage kostenlos erstellen | Rechly",
+        metaDescription:
+            "Rechtssichere Mahnung und Zahlungserinnerung nach § 286 BGB online erstellen: Automatische Verzugszinsen, 40 € B2B-Verzugspauschale, Zahlungsfrist und DIN 5008 Vorlage als PDF.",
+        keywords: [
+            "Mahnung schreiben Vorlage",
+            "Zahlungserinnerung Vorlage kostenlos",
+            "1. Mahnung Muster",
+            "Letzte Mahnung vor Inkasso",
+            "Mahngebühren gesetzlich BGB",
+            "Verzugsschaden geltend machen",
+        ],
+        badge: "BGB-konform",
+        icon: "ExclamationCircleOutlined",
+        guideSections: [
+            {
+                title: "Das dreistufige deutsche Mahnwesen nach BGB",
+                content: [
+                    "Zahlt ein Kunde nicht fristgerecht, regelt § 286 Bürgerliches Gesetzbuch (BGB) den Eintritt des Verzugs.",
+                    "In der Geschäftspraxis hat sich ein dreistufiger Mahnprozess etabliert, der die Kundenbeziehung schont, aber rechtlich alle Weichen für Inkasso und gerichtliche Schritte stellt.",
+                ],
+                bullets: [
+                    "Stufe 1 (Zahlungserinnerung): Freundlicher Hinweis ohne Verzugskosten. Typische Zahlungsfrist: 7 bis 10 Tage.",
+                    "Stufe 2 (1. Mahnung): Bestimmte Aufforderung mit Geltendmachung von Verzugszinsen und Mahnspesen. Frist: 7 Tage.",
+                    "Stufe 3 (Letzte Mahnung): Letzte Fristsetzung (3 bis 5 Tage) mit unmissverständlicher Androhung des gerichtlichen Mahnbescheids oder Inkassoübergabe.",
+                ],
+            },
+            {
+                title: "Die 40 € Verzugspauschale im B2B-Geschäft (§ 288 Abs. 5 BGB)",
+                content: [
+                    "Gegenüber anderen Unternehmern (B2B) haben Gläubiger bei Zahlungsverzug einen gesetzlichen Anspruch auf eine Pauschale von mindestens 40 Euro. Dies gilt ohne Nachweis eines konkreten Schadens.",
+                    "Gegenüber Verbrauchern (B2C) dürfen dagegen nur tatsächliche, angemessene Mahnkosten (in der Praxis 2,50 € bis 5,00 € für Porto und Papier) geltend gemacht werden.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Ist eine Mahnung vor einem gerichtlichen Mahnbescheid zwingend erforderlich?",
+                answer: "Ist auf der Originalrechnung ein kalendermäßig bestimmtes Zahlungsziel vereinbart (z. B. 'Zahlbar bis zum 15.03.2026') oder greift die 30-Tage-Klausel nach § 286 Abs. 3 BGB, tritt Verzug auch ohne Mahnung ein. Eine schriftliche Mahnung ist jedoch aus Beweisgründen und zur Vermeidung von Prozesskosten zwingend ratsam.",
+            },
+            {
+                question: "Wie hoch sind die gesetzlichen Verzugszinsen?",
+                answer: "Im B2B-Bereich betragen die Verzugszinsen 9 Prozentpunkte über dem Bundesbank-Basiszinssatz. Gegenüber Privatkunden (B2C) sind es 5 Prozentpunkte über Basiszinssatz.",
+            },
+        ],
+        relatedToolIds: ["verzugszinsen-rechner", "girocode-generator", "e-rechnung-viewer"],
+    },
+    {
+        id: "euer-rechner",
+        slug: "euer-rechner",
+        path: "/tools/euer-rechner",
+        title: "EÜR & USt-VA Rechner: Einnahmen-Überschuss-Rechnung nach § 4 Abs. 3 EStG",
+        shortTitle: "EÜR & USt-VA Rechner",
+        eyebrow: "GEWINNERMITTLUNG & ELSTER",
+        category: "Finanzen & Steuern",
+        description:
+            "Ermitteln Sie Ihren steuerlichen Gewinn nach § 4 Abs. 3 EStG und berechnen Sie sofort alle offiziellen ELSTER USt-VA Kennziffern (Kz 81, Kz 86, Kz 66 und Kz 83 Zahllast). Kostenlos & ohne Login.",
+        metaTitle: "EÜR Rechner 2026 kostenlos – Einnahmen-Überschuss-Rechnung & USt-VA | Rechly",
+        metaDescription:
+            "Kostenloser EÜR Rechner für Freiberufler & Kleinunternehmer: Gewinn nach § 4 Abs. 3 EStG ermitteln, Vorsteuer abziehen und ELSTER-Kennziffern (Kz 81, 86, 66, 83) direkt berechnen.",
+        keywords: [
+            "EÜR Rechner kostenlos",
+            "Einnahmen Überschuss Rechnung Vorlage",
+            "ELSTER Kennziffern USt-VA",
+            "Gewinnermittlung Freiberufler",
+            "USt Zahllast berechnen Kz 83",
+            "Betriebsausgaben EÜR",
+        ],
+        badge: "ELSTER-kompatibel",
+        icon: "AccountBookOutlined",
+        guideSections: [
+            {
+                title: "Funktionsweise der Einnahmen-Überschuss-Rechnung (EÜR)",
+                content: [
+                    "Die Einnahmen-Überschuss-Rechnung nach § 4 Abs. 3 Einkommensteuergesetz (EStG) ist die vereinfachte Methode der Gewinnermittlung für Freiberufler, Kleingewerbetreibende und nicht im Handelsregister eingetragene Unternehmer.",
+                    "Sie basiert auf dem Zufluss- und Abflussprinzip (§ 11 EStG): Betriebseinnahmen werden in dem Zeitpunkt erfasst, in dem sie auf Ihrem Konto eingehen; Ausgaben in dem Moment, in dem sie bezahlt werden.",
+                ],
+            },
+            {
+                title: "Die ELSTER-Kennziffern für die Umsatzsteuer-Voranmeldung",
+                content: [
+                    "In der USt-VA tragen Sie nicht nur den Gesamtbetrag ein, sondern getrennt nach amtlichen Kennziffern (Kz):",
+                ],
+                bullets: [
+                    "Kz 81: Umsätze zu 19 % (Bemessungsgrundlage netto)",
+                    "Kz 86: Umsätze zu 7 % (Bemessungsgrundlage netto)",
+                    "Kz 66: Abziehbare Vorsteuerbeträge aus Rechnungen anderer Unternehmen",
+                    "Kz 83: Verbleibende Zahllast (bzw. Erstattungsanspruch bei negativem Saldo)",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Wer darf seinen Gewinn mit einer EÜR ermitteln?",
+                answer: "Alle Freiberufler (unabhängig vom Umsatz) sowie Gewerbetreibende, die nicht kaufmännisch buchführungspflichtig sind (Schwellenwerte nach § 141 AO: max. 800.000 € Umsatz und 80.000 € Gewinn pro Jahr).",
+            },
+        ],
+        relatedToolIds: ["kleinunternehmer-rechner", "gewerbesteuer-rechner", "afa-rechner"],
+    },
+    {
+        id: "reverse-charge-rechner",
+        slug: "reverse-charge-rechner",
+        path: "/tools/reverse-charge-rechner",
+        title: "Reverse-Charge & Drittland Rechner: B2B Umsatzsteuer im Ausland (§ 13b & § 3a UStG)",
+        shortTitle: "Reverse-Charge Rechner",
+        eyebrow: "INTERNATIONALES STEUERRECHT",
+        category: "Finanzen & Steuern",
+        description:
+            "Ermitteln Sie mit wenigen Klicks die korrekte steuerliche Behandlung für grenzüberschreitende Rechnungen in die EU (Reverse Charge) und Drittländer (USA, UK, Schweiz) inklusive amtlicher Pflichttexte.",
+        metaTitle: "Reverse-Charge Rechner & EU / Drittland B2B Rechnungsprüfer | Rechly",
+        metaDescription:
+            "Reverse-Charge Rechner für Dienstleistungen ins EU-Ausland & Drittland: Prüfen Sie Steuerbarkeit (§ 3a & § 13b UStG), Pflichttexte für Rechnungen und Kennziffern für USt-VA & ZM.",
+        keywords: [
+            "Reverse Charge Rechner",
+            "§ 13b UStG Steuerschuldnerschaft",
+            "Rechnung EU B2B Pflichtangaben",
+            "Rechnung USA Schweiz Umsatzsteuer",
+            "Zusammenfassende Meldung ZM Pflicht",
+            "Reverse Charge Rechnung Vorlage",
+        ],
+        badge: "EU & Drittland",
+        icon: "GlobalOutlined",
+        guideSections: [
+            {
+                title: "Das Reverse-Charge-Verfahren im europäischen B2B-Verkehr",
+                content: [
+                    "Erbringen Sie als deutsches Unternehmen Dienstleistungen (z. B. IT-Beratung, Design, Software) an ein anderes Unternehmen in einem EU-Mitgliedstaat, greift das sogenannte Reverse-Charge-Verfahren (Umkehr der Steuerschuldnerschaft).",
+                    "Gemäß § 3a Abs. 2 UStG i.V.m. Art. 196 der EU-Mehrwertsteuersystemrichtlinie 2006/112/EG schuldet der ausländische Leistungsempfänger die Umsatzsteuer in seinem Heimatland. Sie stellen eine Netto-Rechnung ohne deutsche Mehrwertsteuer aus.",
+                ],
+                bullets: [
+                    "Pflicht: Sie müssen die gültige USt-IdNr. des Kunden vor Rechnungsstellung qualifiziert prüfen.",
+                    "Pflicht: Auf der Rechnung muss der gesetzliche Hinweis 'Steuerschuldnerschaft des Leistungsempfängers (Reverse Charge)' stehen.",
+                    "Pflicht: Der Nettoumsatz muss in Zeile 41 (Kz 21) der USt-VA und in der monatlichen/quartalsweisen Zusammenfassenden Meldung (ZM) beim BZSt gemeldet werden.",
+                ],
+            },
+            {
+                title: "Rechnungen an Kunden im Drittland (USA, UK, Schweiz)",
+                content: [
+                    "Bei B2B-Kunden außerhalb der EU (Drittland) liegt der Leistungsort für sonstige Leistungen am Sitz des Leistungsempfängers (§ 3a Abs. 2 UStG). Die Leistung ist in Deutschland nicht steuerbar.",
+                    "Sie weisen keine deutsche Umsatzsteuer aus, müssen jedoch auf der Rechnung angeben, dass es sich um eine im Inland nicht steuerbare Leistung handelt. Eine Meldung in der ZM entfällt.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Was passiert, wenn der EU-Kunde keine gültige USt-IdNr. hat?",
+                answer: "Ohne Nachweis einer gültigen ausländischen USt-IdNr. gilt der Kunde umsatzsteuerlich als Privatperson (B2C). In diesem Fall müssen Sie deutsche Umsatzsteuer (19 %) ausweisen und abführen bzw. die OSS-Regelung beachten.",
+            },
+        ],
+        relatedToolIds: ["ust-idnr-pruefen", "e-rechnung-viewer", "kleinunternehmer-rechner"],
+    },
+    {
+        id: "afa-rechner",
+        slug: "afa-rechner",
+        path: "/tools/afa-rechner",
+        title: "AfA- & GWG-Rechner 2026: Lineare Abschreibung & BMF Nutzungsdauer berechnen",
+        shortTitle: "AfA- & GWG-Rechner",
+        eyebrow: "ABSCHREIBUNG & ANLAGEVERMÖGEN",
+        category: "Finanzen & Steuern",
+        description:
+            "Berechnen Sie die lineare Abschreibung nach amtlicher BMF AfA-Tabelle, prüfen Sie GWG-Sofortabschreibung (bis 800 € netto nach § 6 Abs. 2 EStG) und erstellen Sie den vollständigen Abschreibungsplan.",
+        metaTitle: "AfA Rechner 2026 – Lineare Abschreibung & GWG Grenze berechnen | Rechly",
+        metaDescription:
+            "AfA Rechner für Selbstständige: Lineare Abschreibung nach amtlicher BMF-Tabelle, GWG-Sofortabschreibung bis 800 € und Sammelposten berechnen. Mit Jahresplan & Steuerersparnis.",
+        keywords: [
+            "AfA Rechner 2026",
+            "GWG Grenze 2026 800 Euro",
+            "Lineare Abschreibung berechnen",
+            "Laptop AfA 1 Jahr BMF",
+            "Abschreibungsplan Excel",
+            "Sammelposten § 6 Abs. 2a EStG",
+        ],
+        badge: "BMF 2026",
+        icon: "CalculatorOutlined",
+        guideSections: [
+            {
+                title: "Abschreibung von Wirtschaftsgütern nach deutschem Steuerrecht",
+                content: [
+                    "Kaufen Sie betriebliche Arbeitsmittel (z. B. Computer, Büromöbel, Fahrzeug), dürfen die Kosten ab einer gewissen Höhe nicht sofort im Kaufmonat voll als Betriebsausgabe abgezogen werden, sondern müssen über die Nutzungsdauer verteilt abgeschrieben werden (AfA = Absetzung für Abnutzung, § 7 EStG).",
+                ],
+                bullets: [
+                    "Bis 800 € netto (GWG nach § 6 Abs. 2 EStG): 100 % Sofortabschreibung im Anschaffungsjahr möglich.",
+                    "250,01 € bis 1.000 € netto (Sammelposten nach § 6 Abs. 2a EStG): Wahlrecht für 5-jährige Poolabschreibung mit pauschal 20 % pro Jahr.",
+                    "Über 800 € / 1.000 € netto: Reguläre lineare Abschreibung nach amtlicher BMF-Tabelle.",
+                    "Sonderregelung Computer/Software: Durch BMF-Schreiben vom 22.02.2022 gilt für Computerhardware und Software eine fiktive Nutzungsdauer von 1 Jahr (faktische Sofortabschreibung).",
+                ],
+            },
+            {
+                title: "Monatsgenaue Abschreibung im ersten Jahr (Pro-rata temporis)",
+                content: [
+                    "Erfolgt die Anschaffung unterjährig, wird die AfA im Anschaffungsjahr monatsgenau ab dem Kaufmonat berechnet (§ 7 Abs. 1 Satz 4 EStG). Ein im Juli gekauftes Wirtschaftsgut wird im ersten Jahr mit 6/12 der Jahres-AfA abgeschrieben.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Gilt für die 800 € GWG-Grenze der Netto- oder Bruttobetrag?",
+                answer: "Für vorsteuerabzugsberechtigte Unternehmer gilt stets der Nettobetrag ohne Umsatzsteuer (800,00 €). Kleinunternehmer nach § 19 UStG ohne Vorsteuerabzug müssen den Bruttobetrag heranziehen (800,00 € brutto).",
+            },
+        ],
+        relatedToolIds: ["euer-rechner", "gewerbesteuer-rechner", "stundensatz-rechner"],
+    },
+    {
+        id: "sepa-xml-generator",
+        slug: "sepa-xml-generator",
+        path: "/tools/sepa-xml-generator",
+        title: "SEPA XML Generator: pain.001 Überweisung & pain.008 Lastschrift erstellen",
+        shortTitle: "SEPA XML Generator",
+        eyebrow: "OPEN BANKING & SEPA ISO 20022",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Erstellen Sie standardkonforme ISO 20022 XML-Dateien für Sammelüberweisungen (pain.001.001.03) und SEPA-Lastschriften (pain.008.001.02) für alle deutschen Banken (Sparkasse, Deutsche Bank, etc.).",
+        metaTitle: "SEPA XML Generator kostenlos – pain.001 & pain.008 online erstellen | Rechly",
+        metaDescription:
+            "Kostenloser SEPA XML Generator: pain.001 Sammelüberweisungen und pain.008 Lastschriften im ISO 20022 Format im Browser generieren und sofort im Online-Banking hochladen. Ohne Registrierung.",
+        keywords: [
+            "SEPA XML Generator kostenlos",
+            "pain.001 erstellen online",
+            "pain.008 Lastschrift XML",
+            "Sammelüberweisung XML Datei erstellen",
+            "ISO 20022 SEPA Generator",
+            "DTAUS Nachfolger XML",
+        ],
+        badge: "ISO 20022",
+        icon: "BankOutlined",
+        guideSections: [
+            {
+                title: "SEPA-Sammelaufträge nach dem Standard ISO 20022",
+                content: [
+                    "Das SEPA-XML-Format (pain = Payment Initiation) ist der verbindliche europäische Bankenstandard für Sammelüberweisungen und Lastschriften.",
+                    "Anstatt Rechnungen oder Honorare einzeln per Hand im Online-Banking einzutippen, bündeln Sie beliebig viele Zahlungsempfänger in einer einzigen XML-Datei und führen alle Transaktionen mit einer einzigen Freigabe (z. B. pushTAN) aus.",
+                ],
+                bullets: [
+                    "pain.001.001.03: SEPA-Sammelüberweisung (Credit Transfer) – Zur Bezahlung von Lieferanten, Freelancern oder Gehältern.",
+                    "pain.008.001.02: SEPA-Basislastschrift CORE (Direct Debit) – Zum Einzug wiederkehrender Mitgliedsbeiträge, Retainer oder Rechnungen mit Lastschriftmandat.",
+                ],
+            },
+            {
+                title: "Vorteile der browser-seitigen XML-Generierung",
+                content: [
+                    "Die Generierung erfolgt zu 100 % lokal in Ihrem Webbrowser. Es werden keinerlei vertrauliche Bankdaten (IBAN, Namen oder Beträge) auf externe Server übertragen. Die Datei ist sofort bereit für das Firmenkundenportal Ihrer Sparkasse, Deutschen Bank, Commerzbank oder Volksbank.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Was brauche ich für eine SEPA-Lastschriftdatei (pain.008)?",
+                answer: "Sie benötigen eine Gläubiger-Identifikationsnummer (Gläubiger-ID) der Deutschen Bundesbank, eine eindeutige Mandatsreferenz sowie das Datum der Mandatsunterschrift des Kunden.",
+            },
+            {
+                question: "Unterstützen alle deutschen Banken diesen XML-Standard?",
+                answer: "Ja, der Standard pain.001.001.03 und pain.008.001.02 ist von der Deutschen Kreditwirtschaft (DK) für alle deutschen Kreditinstitute verbindlich freigegeben.",
+            },
+        ],
+        relatedToolIds: ["girocode-generator", "e-rechnung-viewer", "mahnung-generator"],
+    },
 ];
 
 export function getToolBySlug(slug: string): ToolDefinition | undefined {

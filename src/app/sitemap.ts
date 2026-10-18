@@ -201,6 +201,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.88,
         },
         {
+            url: "/tools/steuerkalender-2026",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.92,
+        },
+        {
+            url: "/tools/mahnung-generator",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.92,
+        },
+        {
+            url: "/tools/euer-rechner",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.91,
+        },
+        {
+            url: "/tools/reverse-charge-rechner",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.91,
+        },
+        {
+            url: "/tools/afa-rechner",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.9,
+        },
+        {
+            url: "/tools/sepa-xml-generator",
+            lastModified: "2026-10-18",
+            changeFrequency: "weekly",
+            priority: 0.9,
+        },
+        {
             url: "/impressum",
             lastModified: "2025-12-01",
             changeFrequency: "yearly",

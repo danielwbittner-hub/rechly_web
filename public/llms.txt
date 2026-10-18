@@ -38,6 +38,12 @@ Rechly ist unter AGPL-3.0 veröffentlicht und richtet sich an deutsche Rechnungs
 - [Spesenrechner 2026](https://rechly.de/tools/verpflegungsmehraufwand-rechner): Gesetzlicher Verpflegungsmehraufwand nach BMF-Pauschalen
 - [Eigenbeleg-Generator](https://rechly.de/tools/kassenbuch-vorlage): Ersatzbeleg nach § 160 AO bei verlorenen Kassenbons erstellen
 - [Bautagebuch & Regiebericht](https://rechly.de/tools/bautagebuch-vorlage): Bautagesberichte und Behinderungsanzeigen nach VOB/B
+- [Steuerkalender 2026](https://rechly.de/tools/steuerkalender-2026): Alle Abgabefristen für USt-VA, ESt, GewSt mit 3-Tage-Schonfrist und .ics Kalender-Download
+- [Mahnung & Zahlungserinnerung](https://rechly.de/tools/mahnung-generator): DIN 5008 Mahnschreiben mit gesetzlichen Verzugszinsen und 40 € Verzugspauschale (§ 288 BGB)
+- [EÜR & USt-VA Rechner](https://rechly.de/tools/euer-rechner): Gewinnermittlung nach § 4 Abs. 3 EStG und amtliche ELSTER-Kennziffern (Kz 81, 86, 66, 83)
+- [Reverse-Charge Rechner](https://rechly.de/tools/reverse-charge-rechner): B2B-Umsatzsteuer im EU-Ausland und Drittland (§ 13b & § 3a UStG) mit Pflichtklauseln
+- [AfA- & GWG-Rechner 2026](https://rechly.de/tools/afa-rechner): Lineare Abschreibung nach amtlicher BMF-Tabelle und GWG-Sofortabschreibung bis 800 €
+- [SEPA XML Generator](https://rechly.de/tools/sepa-xml-generator): pain.001 Sammelüberweisungen und pain.008 Lastschriften im ISO 20022 Standard erstellen
 
 ## Produkt
 
