@@ -115,11 +115,11 @@ export default function Footer() {
                             Generatoren & Rechner
                         </Text>
                         <Space direction="vertical" size={8}>
-                            <Link href="/tools" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
-                                🛠️ Alle 30 Tools & Rechner
+                            <Link href="/tools" style={linkStyle}>
+                                Alle Tools & Rechner
                             </Link>
-                            <Link href="/tools/rechnungsgenerator" style={{ ...linkStyle, fontWeight: 600, color: "#0f172a" }}>
-                                Rechnungsgenerator (PDF/XML)
+                            <Link href="/tools/rechnungsgenerator" style={linkStyle}>
+                                Rechnungsgenerator
                             </Link>
                             <Link href="/tools/angebotsgenerator" style={linkStyle}>
                                 Angebotsgenerator
@@ -128,22 +128,13 @@ export default function Footer() {
                                 Mehrwertsteuer-Rechner
                             </Link>
                             <Link href="/tools/quittung-erstellen" style={linkStyle}>
-                                Quittung online erstellen
-                            </Link>
-                            <Link href="/tools/lieferschein-generator" style={linkStyle}>
-                                Lieferschein-Generator
+                                Quittung erstellen
                             </Link>
                             <Link href="/tools/e-rechnung-viewer" style={linkStyle}>
                                 E-Rechnung Viewer
                             </Link>
                             <Link href="/tools/mahnung-generator" style={linkStyle}>
                                 Mahnung-Generator
-                            </Link>
-                            <Link href="/tools/fahrtkosten-rechner" style={linkStyle}>
-                                Fahrtkostenrechner 2026
-                            </Link>
-                            <Link href="/tools/stundenzettel-generator" style={linkStyle}>
-                                Stundenzettel-Generator
                             </Link>
                         </Space>
                     </div>
@@ -166,8 +157,8 @@ export default function Footer() {
                                     Vorlagen & Lexikon
                                 </Text>
                                 <Space direction="vertical" size={8}>
-                                    <Link href="/vorlagen" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
-                                        📄 Alle 14 Branchen-Vorlagen
+                                    <Link href="/vorlagen" style={linkStyle}>
+                                        Branchen-Vorlagen
                                     </Link>
                                     <Link href="/vorlagen/handwerker" style={linkStyle}>
                                         Handwerkerrechnung (§ 35a)
@@ -178,23 +169,14 @@ export default function Footer() {
                                     <Link href="/vorlagen/kleinunternehmer" style={linkStyle}>
                                         Kleinunternehmer-Vorlage
                                     </Link>
-                                    <Link href="/vorlagen/freiberufler" style={linkStyle}>
-                                        Honorarnoten Freiberufler
-                                    </Link>
-                                    <Link href="/vorlagen/privatperson" style={linkStyle}>
-                                        Privatrechnung schreiben
-                                    </Link>
-                                    <Link href="/lexikon" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
-                                        📚 Steuer- & Rechnungs-Lexikon
+                                    <Link href="/lexikon" style={linkStyle}>
+                                        Steuer- & Rechnungs-Lexikon
                                     </Link>
                                     <Link href="/lexikon/pflichtangaben-rechnung" style={linkStyle}>
                                         Pflichtangaben (§ 14 UStG)
                                     </Link>
                                     <Link href="/lexikon/e-rechnung-pflicht" style={linkStyle}>
                                         E-Rechnungspflicht 2025–2028
-                                    </Link>
-                                    <Link href="/lexikon/aufbewahrungsfristen" style={linkStyle}>
-                                        Aufbewahrungsfrist (8 Jahre)
                                     </Link>
                                 </Space>
                             </div>

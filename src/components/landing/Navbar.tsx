@@ -75,25 +75,13 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                         <Button type="text" href="/features">
                             {t("nav.features")}
                         </Button>
-                        <Button
-                            type="text"
-                            href="/tools"
-                            style={{ fontWeight: 600, color: "#2563eb" }}
-                        >
-                            Tools & Rechner
+                        <Button type="text" href="/tools">
+                            Tools
                         </Button>
                         {language === "de" ? (
-                            <>
-                                <Button type="text" href="/vorlagen">
-                                    Vorlagen
-                                </Button>
-                                <Button type="text" href="/lexikon">
-                                    Lexikon
-                                </Button>
-                                <Button type="text" href="/rechnung-schreiben">
-                                    Ratgeber
-                                </Button>
-                            </>
+                            <Button type="text" href="/rechnung-schreiben">
+                                Ratgeber
+                            </Button>
                         ) : null}
                         <Button type="text" href="/open-source">
                             Open Source
@@ -210,51 +198,22 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                             type="text"
                             href="/tools"
                             onClick={() => setMobileMenuOpen(false)}
-                            style={{
-                                justifyContent: "flex-start",
-                                height: 44,
-                                fontWeight: 700,
-                                color: "#2563eb",
-                            }}
+                            style={{ justifyContent: "flex-start", height: 44 }}
                         >
-                            🛠️ Alle 30 Tools & Rechner
+                            Tools
                         </Button>
                         {language === "de" ? (
-                            <>
-                                <Button
-                                    type="text"
-                                    href="/vorlagen"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    style={{
-                                        justifyContent: "flex-start",
-                                        height: 44,
-                                    }}
-                                >
-                                    📄 Rechnungsvorlagen (14 Branchen)
-                                </Button>
-                                <Button
-                                    type="text"
-                                    href="/lexikon"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    style={{
-                                        justifyContent: "flex-start",
-                                        height: 44,
-                                    }}
-                                >
-                                    📚 Steuer- & Rechnungs-Lexikon
-                                </Button>
-                                <Button
-                                    type="text"
-                                    href="/rechnung-schreiben"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    style={{
-                                        justifyContent: "flex-start",
-                                        height: 44,
-                                    }}
-                                >
-                                    Ratgeber
-                                </Button>
-                            </>
+                            <Button
+                                type="text"
+                                href="/rechnung-schreiben"
+                                onClick={() => setMobileMenuOpen(false)}
+                                style={{
+                                    justifyContent: "flex-start",
+                                    height: 44,
+                                }}
+                            >
+                                Ratgeber
+                            </Button>
                         ) : null}
                         <Button
                             type="text"
