@@ -135,8 +135,9 @@ export async function POST(request: NextRequest) {
             registryCourt: body.registry_court || null,
             managingDirectors: body.managing_directors || null,
             bankName: body.bank_name || null,
-            bankIban: body.bank_iban,
-            bankBic: body.bank_bic || null,
+            // Strip spaces: the BIC column holds 11 chars, e-invoices expect a compact IBAN
+            bankIban: typeof body.bank_iban === "string" ? body.bank_iban.replace(/\s+/g, "").toUpperCase() : body.bank_iban,
+            bankBic: body.bank_bic ? String(body.bank_bic).replace(/\s+/g, "").toUpperCase() : null,
             logoBase64: body.logo_base64 || null,
             isSmallBusiness: !!body.is_small_business,
             paymentTermsDefault: body.payment_terms_default,

@@ -36,7 +36,11 @@ export async function GET() {
         const response = await databases.listDocuments(
             DATABASE_ID,
             COLLECTIONS.PRODUCTS,
-            [Query.equal("userId", user.$id), Query.orderDesc("$createdAt")]
+            [
+                Query.equal("userId", user.$id),
+                Query.orderDesc("$createdAt"),
+                Query.limit(5000),
+            ]
         );
 
         // Map documents to product format

@@ -4,6 +4,14 @@ const nextConfig: NextConfig = {
     // Standalone output for containerized deployments (Heroku, Docker, etc.)
     output: "standalone",
 
+    // Keep pdfkit (ZUGFeRD) out of the bundle: it loads its standard fonts
+    // (*.afm) from node_modules/pdfkit/js/data at runtime, which are missing
+    // once bundled.
+    serverExternalPackages: ["pdfkit"],
+    outputFileTracingIncludes: {
+        "/api/invoices/[id]/zugferd": ["./node_modules/pdfkit/js/data/**"],
+    },
+
     // Disable type checking during build (we run it separately)
     typescript: {
         ignoreBuildErrors: false,

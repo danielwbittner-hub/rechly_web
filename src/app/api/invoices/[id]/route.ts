@@ -276,7 +276,7 @@ export async function DELETE(
         const itemsResponse = await databases.listDocuments(
             DATABASE_ID,
             COLLECTIONS.INVOICE_ITEMS,
-            [Query.equal("invoiceId", id)],
+            [Query.equal("invoiceId", id), Query.limit(200)],
         );
 
         for (const item of itemsResponse.documents) {
