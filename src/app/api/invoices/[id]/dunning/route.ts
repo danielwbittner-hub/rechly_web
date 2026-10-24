@@ -50,6 +50,7 @@ export async function GET(
                 Query.equal("userId", user.$id),
                 Query.equal("invoiceId", id),
                 Query.orderAsc("level"),
+                Query.limit(100),
             ]
         );
         return NextResponse.json(res.documents.map(mapNotice));

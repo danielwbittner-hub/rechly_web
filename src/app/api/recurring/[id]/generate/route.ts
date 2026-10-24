@@ -55,7 +55,7 @@ export async function POST(
             databases.listDocuments(
                 DATABASE_ID,
                 COLLECTIONS.RECURRING_INVOICE_ITEMS,
-                [Query.equal("recurringInvoiceId", id)],
+                [Query.equal("recurringInvoiceId", id), Query.limit(200)],
             ),
         ]);
 
@@ -94,7 +94,7 @@ export async function POST(
                 userId: user.$id,
                 clientId: templateDoc.clientId,
                 invoiceNumber,
-                invoiceDate: today,
+                issueDate: today,
                 dueDate: dayjs(today).add(14, "day").format("YYYY-MM-DD"),
                 status: "draft",
                 notes: templateDoc.notes || null,

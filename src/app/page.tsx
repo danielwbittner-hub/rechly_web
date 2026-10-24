@@ -36,6 +36,10 @@ const WorkflowSection = dynamic(
 const FaqSection = dynamic(
     () => import("@/components/landing/sections/FaqSection"),
 );
+const ToolsSection = dynamic(
+    () => import("@/components/landing/sections/ToolsSection"),
+    { ssr: true }
+);
 const CtaSection = dynamic(
     () => import("@/components/landing/sections/CtaSection"),
 );
@@ -154,6 +158,7 @@ export default function Home() {
 
             <main role="main">
                 <HeroSection />
+                <ToolsSection />
                 <FeaturesSection />
                 <SeoTopicsSection />
                 <ComparisonTopicsSection />

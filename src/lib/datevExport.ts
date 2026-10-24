@@ -32,13 +32,13 @@ function getReceivablesAccount(coa: ChartOfAccounts): string {
 function formatDATEVDate(dateStr: string): string {
     // DATEV expects DDMM format for dates in header, DDMMYYYY for entries
     if (!dateStr) return "";
-    const [y, m, d] = dateStr.split("-");
+    const [y, m, d] = dateStr.slice(0, 10).split("-");
     return `${d}${m}${y}`;
 }
 
 function formatDATEVShortDate(dateStr: string): string {
     if (!dateStr) return "";
-    const [, m, d] = dateStr.split("-");
+    const [, m, d] = dateStr.slice(0, 10).split("-");
     return `${d}${m}`;
 }
 

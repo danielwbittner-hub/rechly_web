@@ -19,7 +19,7 @@ function formatAmount(n: number): string {
 
 function formatDate(dateStr: string): string {
     if (!dateStr) return "";
-    const [y, m, d] = dateStr.split("-");
+    const [y, m, d] = dateStr.slice(0, 10).split("-");
     return `${d}.${m}.${y}`;
 }
 

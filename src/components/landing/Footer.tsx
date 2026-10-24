@@ -99,8 +99,88 @@ export default function Footer() {
                         </Space>
                     </div>
 
+                    {/* Kostenlose Tools & Rechner */}
+                    <div>
+                        <Text
+                            strong
+                            style={{
+                                display: "block",
+                                marginBottom: 12,
+                                fontSize: 13,
+                                textTransform: "uppercase",
+                                letterSpacing: 0.5,
+                                color: "#374151",
+                            }}
+                        >
+                            Generatoren & Rechner
+                        </Text>
+                        <Space direction="vertical" size={8}>
+                            <Link href="/tools" style={linkStyle}>
+                                Alle Tools & Rechner
+                            </Link>
+                            <Link href="/tools/rechnungsgenerator" style={linkStyle}>
+                                Rechnungsgenerator
+                            </Link>
+                            <Link href="/tools/angebotsgenerator" style={linkStyle}>
+                                Angebotsgenerator
+                            </Link>
+                            <Link href="/tools/mehrwertsteuer-rechner" style={linkStyle}>
+                                Mehrwertsteuer-Rechner
+                            </Link>
+                            <Link href="/tools/quittung-erstellen" style={linkStyle}>
+                                Quittung erstellen
+                            </Link>
+                            <Link href="/tools/e-rechnung-viewer" style={linkStyle}>
+                                E-Rechnung Viewer
+                            </Link>
+                            <Link href="/tools/mahnung-generator" style={linkStyle}>
+                                Mahnung-Generator
+                            </Link>
+                        </Space>
+                    </div>
+
                     {language === "de" ? (
                         <>
+                            {/* Branchen-Vorlagen & Lexikon */}
+                            <div>
+                                <Text
+                                    strong
+                                    style={{
+                                        display: "block",
+                                        marginBottom: 12,
+                                        fontSize: 13,
+                                        textTransform: "uppercase",
+                                        letterSpacing: 0.5,
+                                        color: "#374151",
+                                    }}
+                                >
+                                    Vorlagen & Lexikon
+                                </Text>
+                                <Space direction="vertical" size={8}>
+                                    <Link href="/vorlagen" style={linkStyle}>
+                                        Branchen-Vorlagen
+                                    </Link>
+                                    <Link href="/vorlagen/handwerker" style={linkStyle}>
+                                        Handwerkerrechnung (§ 35a)
+                                    </Link>
+                                    <Link href="/vorlagen/bauleistung-13b" style={linkStyle}>
+                                        Bauleistung (§ 13b UStG)
+                                    </Link>
+                                    <Link href="/vorlagen/kleinunternehmer" style={linkStyle}>
+                                        Kleinunternehmer-Vorlage
+                                    </Link>
+                                    <Link href="/lexikon" style={linkStyle}>
+                                        Steuer- & Rechnungs-Lexikon
+                                    </Link>
+                                    <Link href="/lexikon/pflichtangaben-rechnung" style={linkStyle}>
+                                        Pflichtangaben (§ 14 UStG)
+                                    </Link>
+                                    <Link href="/lexikon/e-rechnung-pflicht" style={linkStyle}>
+                                        E-Rechnungspflicht 2025–2028
+                                    </Link>
+                                </Space>
+                            </div>
+
                             {/* Ratgeber: sitewide links to the SEO landing pages */}
                             <div>
                         <Text

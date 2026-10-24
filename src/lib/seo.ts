@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getSiteUrl, getTwitterHandle } from "@/lib/env";
 
 const siteUrl = getSiteUrl();
-const socialImage = `${siteUrl}/opengraph-image`;
 
 interface PageMetadataOptions {
     title: string;
@@ -10,6 +9,8 @@ interface PageMetadataOptions {
     path: string;
     type?: "website" | "article";
     noIndex?: boolean;
+    keywords?: string[];
+    category?: string;
 }
 
 export function createPageMetadata({
@@ -18,17 +19,31 @@ export function createPageMetadata({
     path,
     type = "website",
     noIndex = false,
+    keywords,
+    category,
 }: PageMetadataOptions): Metadata {
     const canonicalPath = path === "/" ? "/" : path.replace(/\/$/, "");
     const canonicalUrl = `${siteUrl}${canonicalPath === "/" ? "" : canonicalPath}`;
     const brandedTitle = title.includes("Rechly") ? title : `${title} | Rechly`;
 
+    const ogParams = new URLSearchParams({
+        title: title.replace(/\s*\|\s*Rechly$/i, ""),
+        ...(category ? { category } : {}),
+    });
+    const dynamicSocialImage =
+        canonicalPath === "/"
+            ? `${siteUrl}/opengraph-image`
+            : `${siteUrl}/og?${ogParams.toString()}`;
+
     return {
         title: { absolute: brandedTitle },
         description,
+        ...(keywords && keywords.length > 0 ? { keywords } : {}),
+        ...(category ? { category } : {}),
         alternates: {
             canonical: canonicalPath,
             languages: {
+                "de-DE": canonicalPath,
                 de: canonicalPath,
                 "x-default": canonicalPath,
             },
@@ -42,10 +57,10 @@ export function createPageMetadata({
             description,
             images: [
                 {
-                    url: socialImage,
+                    url: dynamicSocialImage,
                     width: 1200,
                     height: 630,
-                    alt: "Rechly – Open-Source Rechnungssoftware für Deutschland",
+                    alt: brandedTitle,
                 },
             ],
         },
@@ -53,7 +68,7 @@ export function createPageMetadata({
             card: "summary_large_image",
             title: brandedTitle,
             description,
-            images: [socialImage],
+            images: [dynamicSocialImage],
             creator: getTwitterHandle(),
         },
         robots: noIndex

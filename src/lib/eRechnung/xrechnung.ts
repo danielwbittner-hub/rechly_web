@@ -60,6 +60,8 @@ export function validateXRechnung(
     if (!company.vat_id && !company.tax_number) {
         errors.push("USt-IdNr. oder Steuernummer der Firma fehlt");
     }
+    if (!company.phone) errors.push("Telefonnummer der Firma fehlt");
+    if (!company.email) errors.push("E-Mail-Adresse der Firma fehlt");
 
     // Client checks
     if (!invoice.client) {
@@ -70,6 +72,7 @@ export function validateXRechnung(
         if (!invoice.client.postal_code)
             errors.push("Postleitzahl des Kunden fehlt");
         if (!invoice.client.city) errors.push("Stadt des Kunden fehlt");
+        if (!invoice.client.email) errors.push("E-Mail-Adresse des Kunden fehlt");
     }
 
     // Invoice checks

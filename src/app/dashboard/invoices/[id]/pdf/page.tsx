@@ -76,6 +76,7 @@ const styles = StyleSheet.create({
         marginBottom: 2,
     },
     addressText: {
+        fontSize: 10,
         lineHeight: 1.4,
     },
     infoRow: {
@@ -123,6 +124,7 @@ const styles = StyleSheet.create({
     },
     colUnit: {
         flex: 1,
+        paddingLeft: 8,
     },
     colPrice: {
         flex: 1,

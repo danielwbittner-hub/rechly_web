@@ -79,7 +79,7 @@ const translations: Record<Language, Record<string, string>> = {
         "workflow.title":
             "Von Angebotston bis Zahlungseingang in einem ruhigen Ablauf",
         "workflow.subtitle":
-            "Die Landing Page zeigt jetzt nicht nur klassische Rechnungsfunktionen, sondern auch die tatsächlichen Produktwege: schreiben, senden, erinnern und auswerten.",
+            "Die Landingpage zeigt jetzt nicht nur klassische Rechnungsfunktionen, sondern auch die tatsächlichen Produktwege: schreiben, senden, erinnern und auswerten.",
         "workflow.step1.title": "1. Rechnung aufsetzen",
         "workflow.step1.desc":
             "Positionen, Notizen und Zahlungsbedingungen schnell vorbereiten und bei Bedarf per KI verfeinern.",
@@ -124,7 +124,7 @@ const translations: Record<Language, Record<string, string>> = {
         "footer.privacy": "Datenschutz",
         "footer.terms": "AGB",
         "footer.cookies": "Cookies",
-        "footer.copyright": "Open Source Projekt",
+        "footer.copyright": "Open-Source-Projekt",
         "footer.madeBy": "Entwickelt von einem Studenten",
 
         // Legal pages
@@ -699,7 +699,7 @@ const translations: Record<Language, Record<string, string>> = {
         "offerDetail.title": "Angebot",
         "offerDetail.convertTitle": "In Rechnung umwandeln",
         "offerDetail.convertDesc":
-            "Ein neues Rechnungsentwurf wird aus diesem Angebot erstellt.",
+            "Ein neuer Rechnungsentwurf wird aus diesem Angebot erstellt.",
         "offerDetail.confirm": "Umwandeln",
         "offerDetail.backToOffers": "Zurück zu Angeboten",
         "offerDetail.offerInfo": "Angebotsdaten",
@@ -825,7 +825,7 @@ const translations: Record<Language, Record<string, string>> = {
         "expenses.search": "Suchen...",
         "expenses.importEInvoice": "E-Rechnung importieren",
         "expenses.eInvoiceParsed": "E-Rechnung erkannt – bitte prüfen und speichern.",
-        "expenses.eInvoiceNoXml": "In dieser PDF wurde keine eingebettete E-Rechnung gefunden. Bitte laden Sie die XML-Datei direkt hoch.",
+        "expenses.eInvoiceNoXml": "In diesem PDF wurde keine eingebettete E-Rechnung gefunden. Bitte laden Sie die XML-Datei direkt hoch.",
         "expenses.eInvoiceUnsupported": "Format nicht erkannt. Unterstützt: XRechnung (XML) und ZUGFeRD (PDF).",
         "expenses.new": "Neue Ausgabe",
         "expenses.date": "Datum",
@@ -853,7 +853,7 @@ const translations: Record<Language, Record<string, string>> = {
         "expenses.loadError": "Fehler beim Laden",
         "expenses.ocrTitle": "Beleg hochladen",
         "expenses.ocrHint":
-            "Beleg hochladen um Felder automatisch auszufüllen (KI)",
+            "Beleg hochladen, um Felder automatisch auszufüllen (KI)",
         "expenses.ocrProcessing": "Beleg wird analysiert...",
         "expenses.ocrSuccess": "Felder wurden automatisch ausgefüllt",
         "expenses.ocrError": "Automatisches Ausfüllen fehlgeschlagen",
@@ -868,7 +868,7 @@ const translations: Record<Language, Record<string, string>> = {
         "expenses.fillRequired": "Bitte alle Pflichtfelder ausfüllen",
         "expenses.gross": "Brutto",
         "expenses.vat": "MwSt.",
-        "expenses.uploadHint": "Beleg hochladen um Felder automatisch auszufüllen (KI)",
+        "expenses.uploadHint": "Beleg hochladen, um Felder automatisch auszufüllen (KI)",
         "expenses.receiptUploadError": "Fehler beim Hochladen des Belegs",
         "expenses.pagination": "{0}-{1} von {2} Ausgaben",
         "expenses.required": "Pflichtfeld",
