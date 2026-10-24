@@ -21,17 +21,22 @@ import { TOOLS_CATALOG } from "@/lib/tools/catalog";
 const { Text } = Typography;
 
 export default function ToolsSection() {
-    // Select top 6 high-demand tools for the homepage showcase
+    // Select top 9 high-demand tools & generators for the homepage showcase
     const featuredToolIds = [
+        "rechnungsgenerator",
+        "angebotsgenerator",
         "e-rechnung-viewer",
+        "mehrwertsteuer-rechner",
+        "quittung-erstellen",
+        "mahnung-generator",
         "girocode-generator",
-        "verzugszinsen-rechner",
-        "ust-idnr-pruefen",
-        "stundensatz-rechner",
         "kleinunternehmer-rechner",
+        "stundensatz-rechner",
     ];
 
-    const featuredTools = TOOLS_CATALOG.filter((t) => featuredToolIds.includes(t.id));
+    const featuredTools = featuredToolIds
+        .map((id) => TOOLS_CATALOG.find((t) => t.id === id))
+        .filter((t): t is NonNullable<typeof t> => Boolean(t));
 
     return (
         <section
@@ -195,8 +200,8 @@ export default function ToolsSection() {
                     ))}
                 </div>
 
-                {/* View All Tools CTA Button */}
-                <div style={{ textAlign: "center" }}>
+                {/* View All Tools, Vorlagen & Lexikon CTA Buttons */}
+                <div style={{ display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap" }}>
                     <Link href="/tools">
                         <Button
                             type="primary"
@@ -212,7 +217,35 @@ export default function ToolsSection() {
                                 boxShadow: "0 4px 14px rgba(37,99,235,0.3)",
                             }}
                         >
-                            Alle 15 kostenlosen Tools & Rechner ansehen
+                            Alle {TOOLS_CATALOG.length} kostenlosen Tools & Rechner ansehen
+                        </Button>
+                    </Link>
+                    <Link href="/vorlagen">
+                        <Button
+                            size="large"
+                            style={{
+                                height: 48,
+                                padding: "0 22px",
+                                fontSize: 14,
+                                fontWeight: 700,
+                                borderRadius: 8,
+                            }}
+                        >
+                            14 Branchen-Rechnungsvorlagen
+                        </Button>
+                    </Link>
+                    <Link href="/lexikon">
+                        <Button
+                            size="large"
+                            style={{
+                                height: 48,
+                                padding: "0 22px",
+                                fontSize: 14,
+                                fontWeight: 700,
+                                borderRadius: 8,
+                            }}
+                        >
+                            Steuer- & Rechnungs-Lexikon
                         </Button>
                     </Link>
                 </div>

@@ -25,6 +25,12 @@ import {
     CompassOutlined,
     SolutionOutlined,
     ToolOutlined,
+    FileTextOutlined,
+    SnippetsOutlined,
+    CarOutlined,
+    RollbackOutlined,
+    ClockCircleOutlined,
+    LineChartOutlined,
 } from "@ant-design/icons";
 import { TOOLS_CATALOG, ToolDefinition } from "@/lib/tools/catalog";
 import { getSiteUrl } from "@/lib/env";
@@ -48,6 +54,12 @@ const ICON_MAP: Record<string, React.ReactNode> = {
     CompassOutlined: <CompassOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
     SolutionOutlined: <SolutionOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
     ToolOutlined: <ToolOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    FileTextOutlined: <FileTextOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    SnippetsOutlined: <SnippetsOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    CarOutlined: <CarOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    RollbackOutlined: <RollbackOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    ClockCircleOutlined: <ClockCircleOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
+    LineChartOutlined: <LineChartOutlined style={{ fontSize: 24, color: "#2563eb" }} />,
 };
 
 const CATEGORIES = [

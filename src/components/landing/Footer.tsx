@@ -112,41 +112,93 @@ export default function Footer() {
                                 color: "#374151",
                             }}
                         >
-                            Werkzeuge & Rechner
+                            Generatoren & Rechner
                         </Text>
                         <Space direction="vertical" size={8}>
                             <Link href="/tools" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
-                                🛠️ Alle 15 Tools ansehen
+                                🛠️ Alle 30 Tools & Rechner
+                            </Link>
+                            <Link href="/tools/rechnungsgenerator" style={{ ...linkStyle, fontWeight: 600, color: "#0f172a" }}>
+                                Rechnungsgenerator (PDF/XML)
+                            </Link>
+                            <Link href="/tools/angebotsgenerator" style={linkStyle}>
+                                Angebotsgenerator
+                            </Link>
+                            <Link href="/tools/mehrwertsteuer-rechner" style={linkStyle}>
+                                Mehrwertsteuer-Rechner
+                            </Link>
+                            <Link href="/tools/quittung-erstellen" style={linkStyle}>
+                                Quittung online erstellen
+                            </Link>
+                            <Link href="/tools/lieferschein-generator" style={linkStyle}>
+                                Lieferschein-Generator
                             </Link>
                             <Link href="/tools/e-rechnung-viewer" style={linkStyle}>
                                 E-Rechnung Viewer
                             </Link>
-                            <Link href="/tools/girocode-generator" style={linkStyle}>
-                                GiroCode Generator
+                            <Link href="/tools/mahnung-generator" style={linkStyle}>
+                                Mahnung-Generator
                             </Link>
-                            <Link href="/tools/verzugszinsen-rechner" style={linkStyle}>
-                                Verzugszinsen-Rechner
+                            <Link href="/tools/fahrtkosten-rechner" style={linkStyle}>
+                                Fahrtkostenrechner 2026
                             </Link>
-                            <Link href="/tools/ust-idnr-pruefen" style={linkStyle}>
-                                USt-IdNr. Prüfer (VIES)
-                            </Link>
-                            <Link href="/tools/skontorechner" style={linkStyle}>
-                                Skontorechner
-                            </Link>
-                            <Link href="/tools/stundensatz-rechner" style={linkStyle}>
-                                Stundensatz-Rechner
-                            </Link>
-                            <Link href="/tools/kleinunternehmer-rechner" style={linkStyle}>
-                                Kleinunternehmer-Rechner
-                            </Link>
-                            <Link href="/tools/arbeitstage-rechner" style={linkStyle}>
-                                Arbeitstage 2026
+                            <Link href="/tools/stundenzettel-generator" style={linkStyle}>
+                                Stundenzettel-Generator
                             </Link>
                         </Space>
                     </div>
 
                     {language === "de" ? (
                         <>
+                            {/* Branchen-Vorlagen & Lexikon */}
+                            <div>
+                                <Text
+                                    strong
+                                    style={{
+                                        display: "block",
+                                        marginBottom: 12,
+                                        fontSize: 13,
+                                        textTransform: "uppercase",
+                                        letterSpacing: 0.5,
+                                        color: "#374151",
+                                    }}
+                                >
+                                    Vorlagen & Lexikon
+                                </Text>
+                                <Space direction="vertical" size={8}>
+                                    <Link href="/vorlagen" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
+                                        📄 Alle 14 Branchen-Vorlagen
+                                    </Link>
+                                    <Link href="/vorlagen/handwerker" style={linkStyle}>
+                                        Handwerkerrechnung (§ 35a)
+                                    </Link>
+                                    <Link href="/vorlagen/bauleistung-13b" style={linkStyle}>
+                                        Bauleistung (§ 13b UStG)
+                                    </Link>
+                                    <Link href="/vorlagen/kleinunternehmer" style={linkStyle}>
+                                        Kleinunternehmer-Vorlage
+                                    </Link>
+                                    <Link href="/vorlagen/freiberufler" style={linkStyle}>
+                                        Honorarnoten Freiberufler
+                                    </Link>
+                                    <Link href="/vorlagen/privatperson" style={linkStyle}>
+                                        Privatrechnung schreiben
+                                    </Link>
+                                    <Link href="/lexikon" style={{ ...linkStyle, fontWeight: 700, color: "#2563eb" }}>
+                                        📚 Steuer- & Rechnungs-Lexikon
+                                    </Link>
+                                    <Link href="/lexikon/pflichtangaben-rechnung" style={linkStyle}>
+                                        Pflichtangaben (§ 14 UStG)
+                                    </Link>
+                                    <Link href="/lexikon/e-rechnung-pflicht" style={linkStyle}>
+                                        E-Rechnungspflicht 2025–2028
+                                    </Link>
+                                    <Link href="/lexikon/aufbewahrungsfristen" style={linkStyle}>
+                                        Aufbewahrungsfrist (8 Jahre)
+                                    </Link>
+                                </Space>
+                            </div>
+
                             {/* Ratgeber: sitewide links to the SEO landing pages */}
                             <div>
                         <Text

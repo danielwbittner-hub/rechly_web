@@ -27,6 +27,15 @@ import EuerRechner from "@/components/tools/EuerRechner";
 import ReverseChargeRechner from "@/components/tools/ReverseChargeRechner";
 import AfaRechner from "@/components/tools/AfaRechner";
 import SepaXmlGenerator from "@/components/tools/SepaXmlGenerator";
+import RechnungsGenerator from "@/components/tools/RechnungsGenerator";
+import AngebotsGenerator from "@/components/tools/AngebotsGenerator";
+import MehrwertsteuerRechner from "@/components/tools/MehrwertsteuerRechner";
+import QuittungGenerator from "@/components/tools/QuittungGenerator";
+import LieferscheinGenerator from "@/components/tools/LieferscheinGenerator";
+import StornorechnungGenerator from "@/components/tools/StornorechnungGenerator";
+import FahrtkostenRechner from "@/components/tools/FahrtkostenRechner";
+import StundenzettelGenerator from "@/components/tools/StundenzettelGenerator";
+import MargeRechner from "@/components/tools/MargeRechner";
 
 interface ToolPageProps {
     params: Promise<{ slug: string }>;
@@ -48,6 +57,8 @@ export async function generateMetadata({ params }: ToolPageProps): Promise<Metad
         description: tool.metaDescription,
         path: tool.path,
         type: "website",
+        keywords: tool.keywords,
+        category: tool.category,
     });
 }
 
@@ -130,6 +141,24 @@ function renderToolComponent(slug: string) {
             return <AfaRechner />;
         case "sepa-xml-generator":
             return <SepaXmlGenerator />;
+        case "rechnungsgenerator":
+            return <RechnungsGenerator />;
+        case "angebotsgenerator":
+            return <AngebotsGenerator />;
+        case "mehrwertsteuer-rechner":
+            return <MehrwertsteuerRechner />;
+        case "quittung-erstellen":
+            return <QuittungGenerator />;
+        case "lieferschein-generator":
+            return <LieferscheinGenerator />;
+        case "stornorechnung-generator":
+            return <StornorechnungGenerator />;
+        case "fahrtkosten-rechner":
+            return <FahrtkostenRechner />;
+        case "stundenzettel-generator":
+            return <StundenzettelGenerator />;
+        case "marge-rechner":
+            return <MargeRechner />;
         default:
             return <div>Tool nicht gefunden.</div>;
     }

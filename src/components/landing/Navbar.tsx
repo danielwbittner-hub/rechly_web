@@ -80,12 +80,20 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                             href="/tools"
                             style={{ fontWeight: 600, color: "#2563eb" }}
                         >
-                            Werkzeuge & Rechner
+                            Tools & Rechner
                         </Button>
                         {language === "de" ? (
-                            <Button type="text" href="/rechnung-schreiben">
-                                Ratgeber
-                            </Button>
+                            <>
+                                <Button type="text" href="/vorlagen">
+                                    Vorlagen
+                                </Button>
+                                <Button type="text" href="/lexikon">
+                                    Lexikon
+                                </Button>
+                                <Button type="text" href="/rechnung-schreiben">
+                                    Ratgeber
+                                </Button>
+                            </>
                         ) : null}
                         <Button type="text" href="/open-source">
                             Open Source
@@ -209,20 +217,44 @@ export default function Navbar({ showAuth = true }: NavbarProps) {
                                 color: "#2563eb",
                             }}
                         >
-                            🛠️ Werkzeuge & Rechner
+                            🛠️ Alle 30 Tools & Rechner
                         </Button>
                         {language === "de" ? (
-                            <Button
-                                type="text"
-                                href="/rechnung-schreiben"
-                                onClick={() => setMobileMenuOpen(false)}
-                                style={{
-                                    justifyContent: "flex-start",
-                                    height: 44,
-                                }}
-                            >
-                                Ratgeber
-                            </Button>
+                            <>
+                                <Button
+                                    type="text"
+                                    href="/vorlagen"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    style={{
+                                        justifyContent: "flex-start",
+                                        height: 44,
+                                    }}
+                                >
+                                    📄 Rechnungsvorlagen (14 Branchen)
+                                </Button>
+                                <Button
+                                    type="text"
+                                    href="/lexikon"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    style={{
+                                        justifyContent: "flex-start",
+                                        height: 44,
+                                    }}
+                                >
+                                    📚 Steuer- & Rechnungs-Lexikon
+                                </Button>
+                                <Button
+                                    type="text"
+                                    href="/rechnung-schreiben"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    style={{
+                                        justifyContent: "flex-start",
+                                        height: 44,
+                                    }}
+                                >
+                                    Ratgeber
+                                </Button>
+                            </>
                         ) : null}
                         <Button
                             type="text"

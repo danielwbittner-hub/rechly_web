@@ -74,6 +74,15 @@ const nextConfig: NextConfig = {
             { source: "/reverse-charge-rechner", destination: "/tools/reverse-charge-rechner" },
             { source: "/afa-rechner", destination: "/tools/afa-rechner" },
             { source: "/sepa-xml-generator", destination: "/tools/sepa-xml-generator" },
+            { source: "/rechnungsgenerator", destination: "/tools/rechnungsgenerator" },
+            { source: "/angebotsgenerator", destination: "/tools/angebotsgenerator" },
+            { source: "/mehrwertsteuer-rechner", destination: "/tools/mehrwertsteuer-rechner" },
+            { source: "/quittung-erstellen", destination: "/tools/quittung-erstellen" },
+            { source: "/lieferschein-generator", destination: "/tools/lieferschein-generator" },
+            { source: "/stornorechnung-generator", destination: "/tools/stornorechnung-generator" },
+            { source: "/fahrtkosten-rechner", destination: "/tools/fahrtkosten-rechner" },
+            { source: "/stundenzettel-generator", destination: "/tools/stundenzettel-generator" },
+            { source: "/marge-rechner", destination: "/tools/marge-rechner" },
         ];
     },
 };

@@ -985,6 +985,420 @@ export const TOOLS_CATALOG: ToolDefinition[] = [
         ],
         relatedToolIds: ["girocode-generator", "e-rechnung-viewer", "mahnung-generator"],
     },
+    // =========================================================================
+    // 22. RECHNUNGSGENERATOR KOSTENLOS (DIN 5008 + XRECHNUNG + GIROCODE)
+    // =========================================================================
+    {
+        id: "rechnungsgenerator",
+        slug: "rechnungsgenerator",
+        path: "/tools/rechnungsgenerator",
+        title: "Kostenloser Rechnungsgenerator (PDF & XRechnung 3.0)",
+        shortTitle: "Rechnung schreiben",
+        eyebrow: "DIN 5008 & § 14 USTG RECHNUNGSGENERATOR",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Schreiben Sie rechtssichere Rechnungen direkt im Browser – komplett kostenlos und ohne Anmeldung. Mit Live-Vorschau nach DIN 5008, integriertem SEPA-GiroCode QR-Code, 14 Branchen-Vorlagen (§ 19 UStG, § 13b Bau, § 35a Handwerk) und 1-Klick XRechnung 3.0 XML-Export.",
+        metaTitle: "Rechnung schreiben kostenlos – Online Rechnungsgenerator (PDF & XRechnung) | Rechly",
+        metaDescription:
+            "Kostenloser Online-Rechnungsgenerator ohne Anmeldung: Rechnung nach § 14 UStG & DIN 5008 erstellen, als PDF drucken oder als XRechnung 3.0 XML herunterladen. Inkl. Kleinunternehmer (§ 19) & Handwerker (§ 35a).",
+        keywords: [
+            "Rechnung schreiben kostenlos",
+            "Rechnungsgenerator online ohne Anmeldung",
+            "Rechnung erstellen PDF kostenlos",
+            "Kleinunternehmer Rechnung Generator",
+            "Handwerkerrechnung online erstellen",
+            "XRechnung kostenlos erstellen",
+            "Rechnungsvorlage online ausfüllen",
+        ],
+        badge: "Nr. 1 Generator",
+        icon: "FileTextOutlined",
+        guideSections: [
+            {
+                title: "Rechtssichere Rechnung schreiben nach § 14 UStG und DIN 5008",
+                content: [
+                    "Mit dem kostenlosen Rechly Rechnungsgenerator erstellen Sie in weniger als zwei Minuten eine finanzamtkonforme Rechnung – direkt im Browser, ohne Registrierung und ohne Wasserzeichen.",
+                    "Der Generator prüft Ihre Eingaben in Echtzeit auf alle gesetzlichen Pflichtangaben gemäß § 14 Abs. 4 UStG und formatiert das Dokument automatisch im professionellen DIN-5008-Brieflayout inklusive klickbarem SEPA-GiroCode QR-Code für schnelles Bezahlen per Banking-App.",
+                ],
+                bullets: [
+                    "4 Steuer-Modi auf Knopfdruck: Regelbesteuerung (19 % / 7 %), Kleinunternehmer (§ 19 UStG), Reverse Charge (§ 13b UStG Bauleistungen & EU) sowie steuerfreie Leistungen (§ 4 UStG).",
+                    "Handwerker-Bonus (§ 35a EStG): Markieren Sie Arbeits- und Fahrtkosten per Checkbox – der Generator weist den begünstigten Lohnanteil automatisch separat in der Fußzeile aus.",
+                    "E-Rechnung inklusive: Laden Sie Ihre Rechnung wahlweise als klassisches PDF oder als strukturiertes XRechnung 3.0 XML (EN 16931) für Behörden und B2B-Kunden herunter.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Ist der Rechnungsgenerator wirklich zu 100 % kostenlos und ohne Anmeldung?",
+                answer: "Ja. Sie können unbegrenzt viele Rechnungen direkt im Browser erstellen, als PDF speichern oder als XRechnung-XML exportieren – ohne Registrierung, ohne Wasserzeichen und ohne versteckte Kosten.",
+            },
+            {
+                question: "Werden meine eingegebenen Kundendaten auf einem Server gespeichert?",
+                answer: "Nein. Alle Berechnungen, die QR-Code-Erzeugung und der XML-/PDF-Export laufen lokal in Ihrem Browser ab (Zero-Data-Retention). Ihre Geschäftsdaten verlassen Ihr Gerät nicht.",
+            },
+            {
+                question: "Kann ich auch als Kleinunternehmer nach § 19 UStG eine Rechnung erstellen?",
+                answer: "Ja. Wählen Sie oben im Steuer-Modus einfach 'Kleinunternehmer (§ 19 UStG)' aus. Die Mehrwertsteuerspalte wird automatisch ausgeblendet und der gesetzlich vorgeschriebene Hinweis auf § 19 UStG eingefügt.",
+            },
+        ],
+        relatedToolIds: ["angebotsgenerator", "e-rechnung-viewer", "girocode-generator", "mahnung-generator"],
+    },
+    // =========================================================================
+    // 23. ANGEBOTSGENERATOR & KOSTENVORANSCHLAG
+    // =========================================================================
+    {
+        id: "angebotsgenerator",
+        slug: "angebotsgenerator",
+        path: "/tools/angebotsgenerator",
+        title: "Angebotsgenerator & Kostenvoranschlag (PDF)",
+        shortTitle: "Angebot erstellen",
+        eyebrow: "ANGEBOT & KOSTENVORANSCHLAG NACH § 145 BGB",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Erstellen Sie überzeugende Angebote, freibleibende Angebote und Kostenvoranschläge mit Bindefrist, Eventualpositionen und Unterschriftsfeld zur Auftragsbestätigung – inklusive 1-Klick-Umwandlung in eine Rechnung.",
+        metaTitle: "Angebot schreiben kostenlos – Online Angebotsgenerator & Kostenvoranschlag PDF | Rechly",
+        metaDescription:
+            "Kostenloser Angebotsgenerator ohne Anmeldung: Verbindliches Angebot oder Kostenvoranschlag online erstellen, Eventualpositionen ausweisen, als PDF drucken und mit 1 Klick in eine Rechnung umwandeln.",
+        keywords: [
+            "Angebot schreiben kostenlos",
+            "Angebotsgenerator online",
+            "Kostenvoranschlag erstellen PDF",
+            "Angebot Vorlage Handwerk",
+            "Freibleibendes Angebot Muster",
+        ],
+        badge: "PDF + 1-Klick Rechnung",
+        icon: "FileProtectOutlined",
+        guideSections: [
+            {
+                title: "Verbindliches Angebot, freibleibendes Angebot oder Kostenvoranschlag?",
+                content: [
+                    "Nach § 145 BGB ist ein kaufmännisches Angebot grundsätzlich rechtlich bindend, sobald es dem Kunden zugeht. Um sich gegen Preisschwankungen bei Material oder Auslastungsänderungen abzusichern, sollten Sie entweder eine klare Bindefrist ('Gültig bis...') definieren oder das Angebot als 'freibleibend' kennzeichnen.",
+                    "Ein Kostenvoranschlag (§ 649 BGB, häufig im Handwerk und bei Werkverträgen) ist dagegen eine fachmännische Kostenprognose, bei der eine Überschreitung von mehr als 15–20 % dem Auftraggeber unverzüglich angezeigt werden muss.",
+                ],
+                bullets: [
+                    "Eventual- & Alternativpositionen: Bieten Sie Zusatzleistungen (z. B. Wartungsvertrag) direkt im Angebot an, ohne die Hauptsumme optisch aufzublähen.",
+                    "Unterschriftsfeld zur Auftragserteilung: Ihr Kunde kann das PDF direkt gegenzeichnen und als rechtsverbindliche Auftragsbestätigung zurücksenden.",
+                    "1-Klick Rechnungs-Konverter: Wurde das Angebot angenommen, wandeln Sie alle Positionen mit einem Klick direkt in den Rechly Rechnungsgenerator um.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Wie lange ist ein Angebot ohne Fristangabe gültig?",
+                answer: "Nach § 147 BGB muss ein unter Anwesenden (z. B. am Telefon) gemachtes Angebot sofort angenommen werden. Bei schriftlichen Angeboten per E-Mail oder Brief gilt ohne explizite Bindefrist üblicherweise eine Frist von 1 bis 2 Wochen als angemessen.",
+            },
+            {
+                question: "Darf ein Kostenvoranschlag in Rechnung gestellt werden?",
+                answer: "Nach § 632 Abs. 3 BGB ist ein Kostenvoranschlag im Zweifel kostenlos – er darf nur dann berechnet werden, wenn dies vorab ausdrücklich mit dem Kunden vereinbart wurde.",
+            },
+        ],
+        relatedToolIds: ["rechnungsgenerator", "stundensatz-rechner", "marge-rechner"],
+    },
+    // =========================================================================
+    // 24. MEHRWERTSTEUER-RECHNER (BRUTTO-NETTO 19% / 7%)
+    // =========================================================================
+    {
+        id: "mehrwertsteuer-rechner",
+        slug: "mehrwertsteuer-rechner",
+        path: "/tools/mehrwertsteuer-rechner",
+        title: "Mehrwertsteuer-Rechner (Brutto ↔ Netto · 19 % & 7 %)",
+        shortTitle: "Mehrwertsteuer-Rechner",
+        eyebrow: "UMSATZSTEUER & VORSTEUER EXAKT BERECHNEN",
+        category: "Finanzen & Steuern",
+        description:
+            "Berechnen Sie blitzschnell Netto aus Brutto, Brutto aus Netto oder den Gesamtwert aus dem reinen Mehrwertsteuerbetrag – mit 19 %, 7 %, 0 % oder individuellem Steuersatz sowie praktischer Umrechnungstabelle.",
+        metaTitle: "Mehrwertsteuer-Rechner (19% & 7%) – Brutto Netto MwSt. online berechnen | Rechly",
+        metaDescription:
+            "Kostenloser Mehrwertsteuer-Rechner (Umsatzsteuerrechner): Netto in Brutto (+19% / +7%) oder Brutto in Netto (-19% / -7%) sekundenschnell berechnen und für Ihre Rechnung kopieren.",
+        keywords: [
+            "Mehrwertsteuer Rechner",
+            "Umsatzsteuer Rechner 19 Prozent",
+            "Brutto Netto Rechner MwSt",
+            "MwSt aus Brutto herausrechnen",
+            "7 Prozent Mehrwertsteuer berechnen",
+        ],
+        badge: "19% & 7% Live",
+        icon: "PercentageOutlined",
+        guideSections: [
+            {
+                title: "So berechnen Sie die Mehrwertsteuer (19 % und 7 %) fehlerfrei",
+                content: [
+                    "Der häufigste Rechenfehler im Büroalltag passiert beim Herausrechnen der Mehrwertsteuer aus einem Bruttobetrag: Wer von 100,00 € Brutto einfach 19 % abzieht (81,00 €), rechnet falsch! Denn der Bruttobetrag entspricht 119 % des Nettowerts.",
+                    "Korrekt teilen Sie den Bruttobetrag durch 1,19 (bei 19 % Regelsteuersatz) bzw. durch 1,07 (bei 7 % ermäßigtem Steuersatz nach § 12 Abs. 2 UStG). Aus 100,00 € Brutto ergeben sich somit exakt 84,03 € Netto und 15,97 € Umsatzsteuer.",
+                ],
+                bullets: [
+                    "19 % Regelsteuersatz (§ 12 Abs. 1 UStG): Gilt für fast alle gewerblichen Dienstleistungen, Handwerksarbeiten, Software, Beratung und Warenverkäufe.",
+                    "7 % Ermäßigter Steuersatz (§ 12 Abs. 2 UStG): Gilt u. a. für Grundnahrungsmittel, Bücher, Zeitungen, Kunstgegenstände, Urheberrechte sowie den öffentlichen Nahverkehr.",
+                    "0 % Nullsteuersatz (§ 12 Abs. 3 UStG): Gilt seit 2023 für die Lieferung und Installation von Photovoltaikanlagen auf oder in der Nähe von Privatwohnungen.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Wie rechne ich 19 % MwSt. aus einem Bruttobetrag heraus?",
+                answer: "Teilen Sie den Bruttobetrag durch 1,19. Die Differenz zwischen Brutto und dem errechneten Netto ist der exakte Mehrwertsteuerbetrag (Formel: MwSt = Brutto - (Brutto / 1,19)).",
+            },
+            {
+                question: "Was ist der Unterschied zwischen Mehrwertsteuer, Umsatzsteuer und Vorsteuer?",
+                answer: "Alle drei Begriffe bezeichnen dieselbe Steuer: 'Mehrwertsteuer' ist der umgangssprachliche Begriff. 'Umsatzsteuer' ist der steuerrechtliche Fachbegriff für die Steuer auf Ihre Verkäufe, während 'Vorsteuer' die Umsatzsteuer bezeichnet, die Sie selbst beim Einkauf an andere Unternehmen gezahlt haben.",
+            },
+        ],
+        relatedToolIds: ["rechnungsgenerator", "skontorechner", "kleinunternehmer-rechner"],
+    },
+    // =========================================================================
+    // 25. QUITTUNG ERSTELLEN (MIT ZAHLWORT-KONVERTER)
+    // =========================================================================
+    {
+        id: "quittung-erstellen",
+        slug: "quittung-erstellen",
+        path: "/tools/quittung-erstellen",
+        title: "Quittung online erstellen & drucken (inkl. Betrag in Worten)",
+        shortTitle: "Quittung erstellen",
+        eyebrow: "EMPFANGSBESTÄTIGUNG NACH § 368 BGB & § 33 USTDV",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Erstellen Sie sofort druckfertige Quittungen für Barzahlungen inklusive automatischer Umwandlung des Euro-Betrags in deutsche Zahlwörter, MwSt.-Aufschlüsselung sowie Original & Durchschlag auf einer A4-Seite.",
+        metaTitle: "Quittung online erstellen & ausdrucken (PDF Vorlage kostenlos) | Rechly",
+        metaDescription:
+            "Kostenloser Quittungsgenerator: Quittung mit MwSt. oder für Privatverkauf online ausfüllen. Betrag wird automatisch in Worten ausgeschrieben. Mit Original & Durchschlag als PDF drucken.",
+        keywords: [
+            "Quittung erstellen kostenlos",
+            "Quittung Vorlage PDF ausfüllen",
+            "Quittungsgenerator online",
+            "Barquittung mit MwSt Muster",
+            "Betrag in Worten Quittung",
+        ],
+        badge: "Zahlwort-Automatik",
+        icon: "SnippetsOutlined",
+        guideSections: [
+            {
+                title: "Wann hat der Kunde Anspruch auf eine Quittung (§ 368 BGB)?",
+                content: [
+                    "Nach § 368 des Bürgerlichen Gesetzbuches (BGB) hat jeder Schuldner bei Barzahlung einen gesetzlichen Anspruch auf ein schriftliches Empfangsbekenntnis (Quittung) gegen den Zahlungsempfänger.",
+                    "Damit das Finanzamt die Quittung beim zahlenden Unternehmer außerdem zum Vorsteuerabzug und als Betriebsausgabe anerkennt, muss sie bei Beträgen bis 250 € Brutto die Anforderungen einer Kleinbetragsrechnung nach § 33 UStDV erfüllen (Name/Anschrift des Ausstellers, Leistungsbeschreibung, Steuersatz und Ausstellungsdatum).",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Warum schreibt man auf einer Quittung den Betrag in Worten aus?",
+                answer: "Das Ausschreiben des Euro-Betrags in Buchstaben (z. B. 'zweihundertachtunddreißig') verhindert nachträgliche Manipulationen der Ziffern auf dem Papierbeleg.",
+            },
+            {
+                question: "Reicht eine Quittung über 250 Euro für das Finanzamt aus?",
+                answer: "Nein. Ab einem Bruttobetrag von 250,01 Euro greifen die vollen Pflichtangaben einer regulären Rechnung nach § 14 Abs. 4 UStG (insbesondere Name und Anschrift des Empfängers sowie eine fortlaufende Rechnungsnummer). Nutzen Sie dafür unseren kostenlosen Rechnungsgenerator.",
+            },
+        ],
+        relatedToolIds: ["kassenbuch-vorlage", "rechnungsgenerator", "mehrwertsteuer-rechner"],
+    },
+    // =========================================================================
+    // 26. LIEFERSCHEIN-GENERATOR
+    // =========================================================================
+    {
+        id: "lieferschein-generator",
+        slug: "lieferschein-generator",
+        path: "/tools/lieferschein-generator",
+        title: "Lieferschein-Generator kostenlos (DIN 5008 PDF)",
+        shortTitle: "Lieferschein erstellen",
+        eyebrow: "WARENBEGLEITSCHEIN & EMPFANGSBESTÄTIGUNG",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Erstellen Sie professionelle Lieferscheine nach DIN 5008 mit Artikelnummern, Mengenangaben, Eigentumsvorbehalt (§ 449 BGB) und Unterschriftsfeld für die Warenannahme – plus 1-Klick-Übernahme in die Rechnung.",
+        metaTitle: "Lieferschein erstellen kostenlos – Online Lieferschein-Generator (PDF) | Rechly",
+        metaDescription:
+            "Kostenloser Lieferschein-Generator ohne Anmeldung: DIN 5008 Lieferschein ohne Preise für Versand & Baustelle als PDF drucken und mit 1 Klick in eine Rechnung umwandeln.",
+        keywords: [
+            "Lieferschein erstellen kostenlos",
+            "Lieferschein Generator online",
+            "Lieferschein Vorlage PDF ausfüllen",
+            "Lieferschein Muster DIN 5008",
+        ],
+        badge: "DIN 5008 PDF",
+        icon: "CarOutlined",
+        guideSections: [
+            {
+                title: "Warum ein sauberer Lieferschein im B2B-Geschäft unverzichtbar ist",
+                content: [
+                    "Mit der Unterschrift auf dem Lieferschein bestätigt Ihr Kunde den ordnungsgemäßen Empfang der Ware oder Leistung. Im Streitfall vor Gericht ist der unterzeichnete Lieferschein Ihr wichtigstes Beweismittel, um Ihre Werklohn- oder Kaufpreisforderung durchzusetzen.",
+                    "Zudem setzt die Ablieferung beim B2B-Kunden die kaufmännische Untersuchungs- und Rügepflicht nach § 377 HGB in Gang.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Wie lange müssen Lieferscheine aufbewahrt werden?",
+                answer: "Lieferscheine, die keine Buchungsbelege sind, dürfen nach Erhalt bzw. Versand der zugehörigen Rechnung vernichtet werden, sofern die Rechnung alle Angaben enthält. Dient der Lieferschein jedoch als Bestandteil der Rechnung (z. B. Verweis 'Lieferung laut Lieferschein Nr. ...'), gilt die 8-jährige Aufbewahrungsfrist nach § 147 AO.",
+            },
+        ],
+        relatedToolIds: ["rechnungsgenerator", "angebotsgenerator", "bautagebuch-vorlage"],
+    },
+    // =========================================================================
+    // 27. STORNORECHNUNG & GUTSCHRIFT GENERATOR
+    // =========================================================================
+    {
+        id: "stornorechnung-generator",
+        slug: "stornorechnung-generator",
+        path: "/tools/stornorechnung-generator",
+        title: "Stornorechnung & Rechnungskorrektur Generator (PDF)",
+        shortTitle: "Stornorechnung erstellen",
+        eyebrow: "GOBD-KONFORME RECHNUNGSKORREKTUR NACH § 14 USTG",
+        category: "Tagesgeschäft & E-Rechnung",
+        description:
+            "Korrigieren oder stornieren Sie fehlerhafte Rechnungen GoBD-konform per Stornorechnung (Rechnungskorrektur) oder erstellen Sie eine Abrechnungsgutschrift nach § 14 Abs. 2 S. 2 UStG als druckfertiges PDF.",
+        metaTitle: "Stornorechnung erstellen kostenlos – Rechnungskorrektur & Gutschrift Generator | Rechly",
+        metaDescription:
+            "Fehlerhafte Rechnung rechtssicher stornieren: Kostenloser Stornorechnung-Generator nach § 14 UStG & GoBD. Mit Pflichtverweis auf die Originalrechnung sofort als PDF drucken.",
+        keywords: [
+            "Stornorechnung erstellen kostenlos",
+            "Rechnungskorrektur Vorlage PDF",
+            "Gutschrift erstellen Generator",
+            "Rechnung stornieren Muster",
+            "Unterschied Gutschrift Stornorechnung",
+        ],
+        badge: "GoBD-konform",
+        icon: "RollbackOutlined",
+        guideSections: [
+            {
+                title: "Warum Sie eine gebuchte Rechnung niemals einfach löschen dürfen",
+                content: [
+                    "Sobald eine Rechnung an den Kunden versendet oder in der Buchhaltung erfasst wurde, greift der Grundsatz der Unveränderbarkeit nach den GoBD (§ 146 Abs. 4 AO). Eine fehlerhafte Rechnung darf dann nicht mehr überschrieben oder gelöscht werden.",
+                    "Stattdessen müssen Sie eine Stornorechnung (kaufmännische Rechnungskorrektur) mit eigener fortlaufender Belegnummer und negativem Betrag ausstellen, die eindeutig auf die Nummer und das Datum der ursprünglichen Rechnung verweist.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Darf ich eine Stornorechnung noch 'Gutschrift' nennen?",
+                answer: "Steuerrechtlich bezeichnet 'Gutschrift' seit 2013 (§ 14 Abs. 2 Satz 2 UStG) ausschließlich eine Rechnung, die der Leistungsempfänger ausstellt (z. B. Provisionsgutschrift). Für die Korrektur einer Rechnung sollten Sie zwingend den Begriff 'Stornorechnung' oder 'Rechnungskorrektur' verwenden.",
+            },
+        ],
+        relatedToolIds: ["rechnungsgenerator", "mahnung-generator", "e-rechnung-viewer"],
+    },
+    // =========================================================================
+    // 28. FAHRTKOSTEN- & KILOMETERGELD-RECHNER 2026
+    // =========================================================================
+    {
+        id: "fahrtkosten-rechner",
+        slug: "fahrtkosten-rechner",
+        path: "/tools/fahrtkosten-rechner",
+        title: "Fahrtkosten- & Kilometergeld-Rechner 2026 (0,30 € / 0,38 €)",
+        shortTitle: "Fahrtkosten-Rechner",
+        eyebrow: "DIENSTREISE, PENDLERPAUSCHALE & KUNDENABRECHNUNG",
+        category: "Finanzen & Steuern",
+        description:
+            "Berechnen Sie Ihre steuerfreie Kilometerpauschale für Dienstreisen (0,30 €/km), die Entfernungspauschale 2026 (0,30 € / 0,38 € ab dem 21. km) oder die umsatzsteuerlich korrekte Weiterberechnung von Fahrtkosten an Kunden.",
+        metaTitle: "Fahrtkostenrechner 2026 – Kilometergeld, Dienstreise & Pendlerpauschale | Rechly",
+        metaDescription:
+            "Kostenloser Fahrtkostenrechner 2026: Kilometergeld (0,30 €/km Dienstreise), Pendlerpauschale (0,38 € ab km 21) & Kunden-Weiterberechnung mit MwSt. berechnen + PDF-Eigenbeleg drucken.",
+        keywords: [
+            "Fahrtkostenrechner 2026",
+            "Kilometergeld Rechner Dienstreise",
+            "Pendlerpauschale Rechner 2026",
+            "Fahrtkosten an Kunden weiterberechnen MwSt",
+            "Kilometerpauschale Selbstständige",
+        ],
+        badge: "Pauschalen 2026",
+        icon: "CompassOutlined",
+        guideSections: [
+            {
+                title: "Dienstreise (0,30 €/km) vs. Entfernungspauschale (0,30 € / 0,38 €)",
+                content: [
+                    "Bei Auswärtstätigkeiten (Dienstreisen zu Kunden, Baustellen oder Messen) mit dem privaten PKW dürfen Selbstständige und Arbeitnehmer jeden tatsächlich gefahrenen Kilometer (Hin- und Rückfahrt!) pauschal mit 0,30 € als Betriebsausgabe bzw. Werbungskosten ansetzen.",
+                    "Für die tägliche Fahrt zwischen Wohnung und erster Tätigkeitsstätte gilt dagegen die Entfernungspauschale (Pendlerpauschale): Sie zählt nur für die einfache Strecke (0,30 € für die ersten 20 km, 0,38 € ab dem 21. Kilometer).",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Muss ich auf Fahrtkosten, die ich dem Kunden in Rechnung stelle, Mehrwertsteuer aufschlagen?",
+                answer: "Ja! Wenn Sie einem Kunden Fahrtkosten oder Kilometerpauschalen auf Ihrer Rechnung weiterberechnen, handelt es sich umsatzsteuerlich um eine Nebenleistung, die das Schicksal der Hauptleistung teilt (§ 3 UStG). Unterliegt Ihre Hauptleistung 19 % MwSt., müssen Sie auch auf die Fahrtkosten 19 % MwSt. berechnen.",
+            },
+        ],
+        relatedToolIds: ["verpflegungsmehraufwand-rechner", "rechnungsgenerator", "euer-rechner"],
+    },
+    // =========================================================================
+    // 29. STUNDENZETTEL-GENERATOR & ARBEITSZEITRECHNER
+    // =========================================================================
+    {
+        id: "stundenzettel-generator",
+        slug: "stundenzettel-generator",
+        path: "/tools/stundenzettel-generator",
+        title: "Stundenzettel-Generator & Arbeitszeitrechner (PDF & CSV)",
+        shortTitle: "Stundenzettel erstellen",
+        eyebrow: "ZEITERFASSUNG NACH § 17 MILOG & § 4 ARBZG",
+        category: "Kalkulation & HR",
+        description:
+            "Erfassen Sie Arbeits- und Projektstunden online mit automatischer Umrechnung in Dezimalstunden, gesetzlicher Pausenprüfung nach § 4 ArbZG (30/45 Min.), Honorarkalkulation sowie PDF- und CSV-Export.",
+        metaTitle: "Stundenzettel Vorlage kostenlos – Online Arbeitszeitrechner (PDF & Excel/CSV) | Rechly",
+        metaDescription:
+            "Kostenloser Stundenzettel-Generator & Arbeitszeitrechner: Arbeitszeiten in Dezimalstunden umrechnen, gesetzliche Pausen (§ 4 ArbZG) prüfen und als PDF oder CSV exportieren.",
+        keywords: [
+            "Stundenzettel Vorlage PDF kostenlos",
+            "Arbeitszeitrechner online",
+            "Stundennachweis erstellen",
+            "Industriestunden Dezimalstunden Rechner",
+            "Mindestlohngesetz Stundenzettel",
+        ],
+        badge: "ArbZG-Check",
+        icon: "ClockCircleOutlined",
+        guideSections: [
+            {
+                title: "Gesetzliche Pausenregelung (§ 4 ArbZG) und Dezimalstunden-Umrechnung",
+                content: [
+                    "Nach § 4 des Arbeitszeitgesetzes (ArbZG) ist bei einer täglichen Arbeitszeit von mehr als 6 bis zu 9 Stunden eine Ruhepause von mindestens 30 Minuten zwingend vorgeschrieben; bei mehr als 9 Stunden beträgt die Mindestpause 45 Minuten.",
+                    "Für die Rechnungsstellung und Lohnabrechnung müssen Uhrzeiten (Minuten) zudem in kaufmännische Dezimalstunden (Industriestunden) umgerechnet werden: 45 Minuten entsprechen dabei nicht 0,45 Stunden, sondern 0,75 Stunden (45 ÷ 60). Unser Generator übernimmt beides vollautomatisch.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Wer muss nach dem Mindestlohngesetz (§ 17 MiLoG) Stundenzettel führen?",
+                answer: "Für alle Minijobber (geringfügig Beschäftigte) sowie in bestimmten Branchen nach § 2a SchwarzArbG (z. B. Baugewerbe, Gastronomie, Gebäudereinigung, Logistik) müssen Beginn, Ende und Dauer der täglichen Arbeitszeit spätestens bis zum Ablauf des 7. Kalendertages dokumentiert und 2 Jahre lang aufbewahrt werden.",
+            },
+        ],
+        relatedToolIds: ["arbeitstage-rechner", "stundensatz-rechner", "rechnungsgenerator"],
+    },
+    // =========================================================================
+    // 30. MARGE-RECHNER & HANDELSKALKULATION (IHK)
+    // =========================================================================
+    {
+        id: "marge-rechner",
+        slug: "marge-rechner",
+        path: "/tools/marge-rechner",
+        title: "Marge-Rechner & IHK-Handelskalkulation (Aufschlag vs. Spanne)",
+        shortTitle: "Marge-Rechner",
+        eyebrow: "HANDELSSPANNE, AUFSCHLAG & VORWÄRTSKALKULATION",
+        category: "Finanzen & Steuern",
+        description:
+            "Berechnen Sie Gewinnmarge (Handelsspanne), Kalkulationsaufschlag, Rohertrag und die komplette kaufmännische IHK-Vorwärtskalkulation vom Listeneinkaufspreis bis zum Bruttoverkaufspreis.",
+        metaTitle: "Marge Rechner kostenlos – Handelsspanne, Aufschlag & Handelskalkulation | Rechly",
+        metaDescription:
+            "Kostenloser Marge-Rechner für Handel, E-Commerce & Handwerk: Gewinnmarge (Handelsspanne) vs. Kalkulationsaufschlag und vollständige IHK-Vorwärtskalkulation online berechnen.",
+        keywords: [
+            "Marge Rechner",
+            "Handelsspanne berechnen",
+            "Kalkulationsaufschlag Rechner",
+            "Handelskalkulation online Rechner",
+            "Verkaufspreis kalkulieren Formel",
+        ],
+        badge: "IHK-Schema",
+        icon: "LineChartOutlined",
+        guideSections: [
+            {
+                title: "Der teure Unterschied zwischen Marge (Handelsspanne) und Aufschlag",
+                content: [
+                    "Viele Gründer und Händler verwechseln den Kalkulationsaufschlag (Markup) mit der Marge (Handelsspanne): Wenn Sie ein Produkt für 60 € Netto einkaufen und für 100 € Netto verkaufen, erzielen Sie 40 € Rohertrag.",
+                    "Bezogen auf den Einkaufspreis (60 €) entspricht das einem Kalkulationsaufschlag von 66,67 %. Bezogen auf den Netto-Verkaufspreis (100 €) beträgt Ihre Marge (Handelsspanne) jedoch exakt 40,00 %.",
+                ],
+            },
+        ],
+        faqs: [
+            {
+                question: "Warum werden Kundenskonto und Kundenrabatt 'im Hundert' kalkuliert?",
+                answer: "Weil der Kunde Rabatt und Skonto vom späteren Verkaufspreis (100 %) abzieht! Um auf Ihren gewünschten Barverkaufspreis zu kommen, müssen Sie daher durch (1 - Rabattsatz) teilen statt nur zu multiplizieren.",
+            },
+        ],
+        relatedToolIds: ["skontorechner", "stundensatz-rechner", "mehrwertsteuer-rechner"],
+    },
 ];
 
 export function getToolBySlug(slug: string): ToolDefinition | undefined {

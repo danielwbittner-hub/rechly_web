@@ -5,8 +5,8 @@ const repoUrl = getRepoUrl();
 
 /**
  * Global JSON-LD structured data rendered in root layout.
- * Provides Organization and WebSite schema on every page,
- * which helps Google understand site hierarchy and display breadcrumbs.
+ * Provides Organization and WebSite schema (with SearchAction) on every page,
+ * helping Google understand site hierarchy, topical authority, and sitelinks searchbox.
  */
 export default function GlobalJsonLd() {
     const structuredData = {
@@ -27,18 +27,41 @@ export default function GlobalJsonLd() {
                     caption: "Rechly",
                 },
                 description:
-                    "Open-Source Rechnungssoftware für Deutschland. Entwickelt für Freelancer, Selbstständige und kleine Unternehmen.",
+                    "Open-Source Rechnungssoftware & kostenlose Business-Superapp für Deutschland. Entwickelt für Freelancer, Selbstständige, Handwerker und kleine Unternehmen.",
+                areaServed: {
+                    "@type": "Country",
+                    name: "Germany",
+                },
+                knowsAbout: [
+                    "Rechnungssoftware",
+                    "E-Rechnung (XRechnung & ZUGFeRD)",
+                    "Kleinunternehmerregelung (§ 19 UStG)",
+                    "Pflichtangaben Rechnung (§ 14 UStG)",
+                    "Umsatzsteuer & EÜR (§ 4 Abs. 3 EStG)",
+                    "GoBD-konforme Buchhaltung",
+                    "SEPA GiroCode & ISO 20022 XML",
+                    "Mahnwesen & Verzugszinsen (§ 288 BGB)",
+                ],
                 sameAs: [repoUrl],
             },
             {
                 "@type": "WebSite",
                 "@id": `${siteUrl}/#website`,
                 name: "Rechly",
+                alternateName: "Rechly Business-Superapp Deutschland",
                 url: siteUrl,
                 publisher: {
                     "@id": `${siteUrl}/#organization`,
                 },
                 inLanguage: "de-DE",
+                potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                        "@type": "EntryPoint",
+                        urlTemplate: `${siteUrl}/tools?q={search_term_string}`,
+                    },
+                    "query-input": "required name=search_term_string",
+                },
             },
         ],
     };

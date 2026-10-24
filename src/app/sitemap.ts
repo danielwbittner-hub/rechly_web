@@ -1,12 +1,13 @@
 import { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/env";
+import { TOOLS_CATALOG } from "@/lib/tools/catalog";
+import { VORLAGEN_CATALOG } from "@/lib/tools/vorlagenCatalog";
+import { LEXIKON_CATALOG } from "@/lib/tools/lexikonCatalog";
 
 const siteUrl = getSiteUrl();
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    // Use stable dates to signal actual content changes to Google.
-    // Update these when page content is meaningfully modified.
-    const routes: Array<{
+    const coreRoutes: Array<{
         url: string;
         lastModified: string;
         changeFrequency:
@@ -21,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }> = [
         {
             url: "",
-            lastModified: "2026-08-08",
+            lastModified: "2026-10-24",
             changeFrequency: "weekly",
             priority: 1.0,
         },
@@ -103,166 +104,84 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly",
             priority: 0.86,
         },
-        // Kostenlose Superapp Tools & Rechner Hub
+        // Hubs
         {
             url: "/tools",
-            lastModified: "2026-10-18",
+            lastModified: "2026-10-24",
             changeFrequency: "daily",
-            priority: 0.95,
+            priority: 0.96,
         },
         {
-            url: "/tools/e-rechnung-viewer",
-            lastModified: "2026-10-18",
+            url: "/vorlagen",
+            lastModified: "2026-10-24",
             changeFrequency: "weekly",
-            priority: 0.92,
+            priority: 0.94,
         },
         {
-            url: "/tools/girocode-generator",
-            lastModified: "2026-10-18",
+            url: "/lexikon",
+            lastModified: "2026-10-24",
             changeFrequency: "weekly",
-            priority: 0.92,
+            priority: 0.93,
         },
-        {
-            url: "/tools/verzugszinsen-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.92,
-        },
-        {
-            url: "/tools/ust-idnr-pruefen",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.92,
-        },
-        {
-            url: "/tools/skontorechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.91,
-        },
-        {
-            url: "/tools/stundensatz-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.91,
-        },
-        {
-            url: "/tools/kleinunternehmer-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.91,
-        },
-        {
-            url: "/tools/impressum-generator",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
-        {
-            url: "/tools/bewirtungsbeleg-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
-        {
-            url: "/tools/arbeitstage-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
-        {
-            url: "/tools/leitweg-id-pruefen",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.89,
-        },
-        {
-            url: "/tools/gewerbesteuer-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.89,
-        },
-        {
-            url: "/tools/verpflegungsmehraufwand-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.89,
-        },
-        {
-            url: "/tools/kassenbuch-vorlage",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.88,
-        },
-        {
-            url: "/tools/bautagebuch-vorlage",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.88,
-        },
-        {
-            url: "/tools/steuerkalender-2026",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.92,
-        },
-        {
-            url: "/tools/mahnung-generator",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.92,
-        },
-        {
-            url: "/tools/euer-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.91,
-        },
-        {
-            url: "/tools/reverse-charge-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.91,
-        },
-        {
-            url: "/tools/afa-rechner",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
-        {
-            url: "/tools/sepa-xml-generator",
-            lastModified: "2026-10-18",
-            changeFrequency: "weekly",
-            priority: 0.9,
-        },
+    ];
+
+    const toolRoutes = TOOLS_CATALOG.map((tool) => ({
+        url: tool.path,
+        lastModified: "2026-10-24",
+        changeFrequency: "weekly" as const,
+        priority: tool.slug === "rechnungsgenerator" ? 0.96 : 0.91,
+    }));
+
+    const vorlagenRoutes = VORLAGEN_CATALOG.map((vorlage) => ({
+        url: `/vorlagen/${vorlage.slug}`,
+        lastModified: "2026-10-24",
+        changeFrequency: "weekly" as const,
+        priority: 0.89,
+    }));
+
+    const lexikonRoutes = LEXIKON_CATALOG.map((entry) => ({
+        url: `/lexikon/${entry.slug}`,
+        lastModified: "2026-10-24",
+        changeFrequency: "monthly" as const,
+        priority: 0.88,
+    }));
+
+    const legalRoutes = [
         {
             url: "/impressum",
             lastModified: "2025-12-01",
-            changeFrequency: "yearly",
+            changeFrequency: "yearly" as const,
             priority: 0.3,
         },
         {
             url: "/datenschutz",
             lastModified: "2026-08-08",
-            changeFrequency: "yearly",
+            changeFrequency: "yearly" as const,
             priority: 0.3,
         },
         {
             url: "/agb",
             lastModified: "2025-12-01",
-            changeFrequency: "yearly",
+            changeFrequency: "yearly" as const,
             priority: 0.3,
         },
         {
             url: "/cookies",
             lastModified: "2026-08-08",
-            changeFrequency: "yearly",
+            changeFrequency: "yearly" as const,
             priority: 0.2,
         },
     ];
 
-    return routes.map((route) => ({
+    const allRoutes = [
+        ...coreRoutes,
+        ...toolRoutes,
+        ...vorlagenRoutes,
+        ...lexikonRoutes,
+        ...legalRoutes,
+    ];
+
+    return allRoutes.map((route) => ({
         url: `${siteUrl}${route.url}`,
         lastModified: route.lastModified,
         changeFrequency: route.changeFrequency,
